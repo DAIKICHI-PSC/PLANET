@@ -18,7 +18,7 @@ NcWorksの簡易版となりますが、以下の特徴があります。
 ・プログラムから加工時間の割り出し  
 ・プログラムの衝突チェック  
 
-15年以上前にVB.NETで作成したプログラムを、ローカルAIが1日でPythonへ移植してくれました。
+15年以上前にVB.NETで作成したプログラムを、ローカルAIが1日でPythonへ移植してくれました。  
 Source Code(ソースコード) https://github.com/DAIKICHI-PSC/PLANET/archive/refs/heads/main.zip  
 main.pyを実行して下さい。  
 
