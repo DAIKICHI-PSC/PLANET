@@ -154,7 +154,7 @@ class _HideFilter(QObject):
 
 def _yn(parent, text, title='\u78ba\u8a8d'):
     r = QMessageBox.question(parent, title, text,
-                             QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+                              QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes)
     return r == QMessageBox.Yes
 
 

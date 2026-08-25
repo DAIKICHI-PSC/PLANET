@@ -2,7 +2,7 @@
 Auto-generated from VB Button1 handlers. Do not edit by hand.
 """
 import math
-from .vbcommon import (vbval, vbint, vbs, vbcstr, cv, cv2, cv3, cv4,
+from .vbcommon import (vbval, vdiv, vbint, vbs, vbcstr, cv, cv2, cv3, cv4,
                       tank, tank2, tann, rt, vasin, vacos, vsqrt)
 def gen_Kako_Cal_1(self):
     aL = vbval(self.txt('TextBox2'))
@@ -11,9 +11,9 @@ def gen_Kako_Cal_1(self):
     AD = vbval(self.txt('TextBox5'))
     TMP = ''
     self.set_out('')
-    TMP = ('A=' + cv(((vasin((aL / bL)) * 180) / math.pi)))
+    TMP = 'A=' + cv(vdiv(vasin(vdiv(aL, bL)) * 180, math.pi))
     self.a(TMP)
-    TMP = ('C=' + cv(((vacos((aL / bL)) * 180) / math.pi)))
+    TMP = 'C=' + cv(vdiv(vacos(vdiv(aL, bL)) * 180, math.pi))
     self.a(TMP)
     TMP = ('c=' + cv(vsqrt(((bL + aL) * (bL - aL)))))
     self.a(TMP)
@@ -26,9 +26,9 @@ def gen_Kako_Cal_1_ac(self):
     cL = vbval(self.txt('TextBox4'))
     TMP = ''
     self.set_out('')
-    TMP = ('A=' + cv((math.atan(aL / cL) * 180) / math.pi))
+    TMP = 'A=' + cv(vdiv(math.atan(vdiv(aL, cL)) * 180, math.pi))
     self.a(TMP)
-    TMP = ('C=' + cv(90 - (math.atan(aL / cL) * 180) / math.pi))
+    TMP = 'C=' + cv(90 - vdiv(math.atan(vdiv(aL, cL)) * 180, math.pi))
     self.a(TMP)
     TMP = ('b=' + cv(vsqrt(aL * aL + cL * cL)))
     self.a(TMP)
@@ -40,9 +40,9 @@ def gen_Kako_Cal_1_bc(self):
     TMP = ''
     self.set_out('')
     aL = vsqrt(bL * bL - cL * cL)
-    TMP = ('A=' + cv((math.atan(aL / cL) * 180) / math.pi))
+    TMP = 'A=' + cv(vdiv(math.atan(vdiv(aL, cL)) * 180, math.pi))
     self.a(TMP)
-    TMP = ('C=' + cv(90 - (math.atan(aL / cL) * 180) / math.pi))
+    TMP = 'C=' + cv(90 - vdiv(math.atan(vdiv(aL, cL)) * 180, math.pi))
     self.a(TMP)
     TMP = ('a=' + cv(aL))
     self.a(TMP)
@@ -57,11 +57,11 @@ def gen_Kako_Cal_1_Aa(self):
     self.set_out('')
     TMP = ('C=' + cv(90 - AD))
     self.a(TMP)
-    TMP = ('b=' + cv(aL / math.sin(AD / 180 * math.pi)))
+    TMP = 'b=' + cv(vdiv(aL, math.sin(vdiv(AD, 180) * math.pi)))
     self.a(TMP)
-    TMP = ('c=' + cv(aL / math.tan(AD / 180 * math.pi)))
+    TMP = 'c=' + cv(vdiv(aL, math.tan(vdiv(AD, 180) * math.pi)))
     self.a(TMP)
-    TMP = ('cx2=' + cv(aL / math.tan(AD / 180 * math.pi) * 2))
+    TMP = 'cx2=' + cv(vdiv(aL, math.tan(vdiv(AD, 180) * math.pi)) * 2)
     self.a(TMP)
 
 
@@ -72,13 +72,13 @@ def gen_Kako_Cal_1_Ab(self):
     self.set_out('')
     TMP = ('C=' + cv(90 - AD))
     self.a(TMP)
-    TMP = ('a=' + cv(bL * math.sin(AD / 180 * math.pi)))
+    TMP = 'a=' + cv(bL * math.sin(vdiv(AD, 180) * math.pi))
     self.a(TMP)
-    TMP = ('c=' + cv(bL * math.cos(AD / 180 * math.pi)))
+    TMP = 'c=' + cv(bL * math.cos(vdiv(AD, 180) * math.pi))
     self.a(TMP)
-    TMP = ('ax2=' + cv(bL * math.sin(AD / 180 * math.pi) * 2))
+    TMP = 'ax2=' + cv(bL * math.sin(vdiv(AD, 180) * math.pi) * 2)
     self.a(TMP)
-    TMP = ('cx2=' + cv(bL * math.cos(AD / 180 * math.pi) * 2))
+    TMP = 'cx2=' + cv(bL * math.cos(vdiv(AD, 180) * math.pi) * 2)
     self.a(TMP)
 
 
@@ -89,11 +89,11 @@ def gen_Kako_Cal_1_Ac(self):
     self.set_out('')
     TMP = ('C=' + cv(90 - AD))
     self.a(TMP)
-    TMP = ('a=' + cv(cL * math.tan(AD / 180 * math.pi)))
+    TMP = 'a=' + cv(cL * math.tan(vdiv(AD, 180) * math.pi))
     self.a(TMP)
-    TMP = ('b=' + cv(cL / math.cos(AD / 180 * math.pi)))
+    TMP = 'b=' + cv(vdiv(cL, math.cos(vdiv(AD, 180) * math.pi)))
     self.a(TMP)
-    TMP = ('ax2=' + cv(cL * math.tan(AD / 180 * math.pi) * 2))
+    TMP = 'ax2=' + cv(cL * math.tan(vdiv(AD, 180) * math.pi) * 2)
     self.a(TMP)
 
 
@@ -123,9 +123,9 @@ def gen_Kako_Cal_3(self):
     AL = vbval(self.txt('TextBox4'))
     Sa = (AL - R2)
     Sb = (R1 - R2)
-    D1 = ((vasin((Sa / Sb)) * 180) / math.pi)
-    Ba = (R1 * math.sin(((D1 / 180) * math.pi)))
-    Bb = (R1 - (R1 * math.cos(((D1 / 180) * math.pi))))
+    D1 = vdiv(vasin(vdiv(Sa, Sb)) * 180, math.pi)
+    Ba = R1 * math.sin(vdiv(D1, 180) * math.pi)
+    Bb = R1 - R1 * math.cos(vdiv(D1, 180) * math.pi)
     Ec = (R2 - (AL - Ba))
     Bc = vsqrt(((R2 * R2) - (Ec * Ec)))
     TMP = ''
@@ -150,10 +150,10 @@ def gen_Kako_Cal_4(self):
     AL = vbval(self.txt('TextBox4'))
     Sa = (AL + R2)
     Sb = (R1 + R2)
-    D1 = ((vasin((Sa / Sb)) * 180) / math.pi)
-    Bc = (R1 * math.cos(((D1 / 180) * math.pi)))
-    Bb = ((Sb * math.cos(((D1 / 180) * math.pi))) - Bc)
-    Ba = (R1 * math.sin(((D1 / 180) * math.pi)))
+    D1 = vdiv(vasin(vdiv(Sa, Sb)) * 180, math.pi)
+    Bc = R1 * math.cos(vdiv(D1, 180) * math.pi)
+    Bb = Sb * math.cos(vdiv(D1, 180) * math.pi) - Bc
+    Ba = R1 * math.sin(vdiv(D1, 180) * math.pi)
     TMP = ''
     self.set_out('')
     TMP = ('a=' + cv(Ba))
@@ -200,21 +200,21 @@ def gen_Kako_Cal_5(self):
     if (ZairyouKei == 0):
         self.msgbox('材料径が入力されていません。')
         return
-    Kosuu_Hon = vbint(((ZairyouChou - 300) / KakouChou))
-    SeihinChou_Zanzai = (ZairyouChou / Kosuu_Hon)
-    Tanjyuu = ((((((ZairyouKei / 10) * ZairyouKei) / 10) * SeihinChou_Zanzai) * Hijyuu) * 0.7854)
+    Kosuu_Hon = vbint(vdiv(ZairyouChou - 300, KakouChou))
+    SeihinChou_Zanzai = vdiv(ZairyouChou, Kosuu_Hon)
+    Tanjyuu = vdiv(vdiv(ZairyouKei, 10) * ZairyouKei, 10) * SeihinChou_Zanzai * Hijyuu * 0.7854
     Tanka = 0
-    if (ZairyouTanka != 0): Tanka = ((ZairyouTanka / 1000) * Tanjyuu)
+    if (ZairyouTanka != 0): Tanka = vdiv(ZairyouTanka, 1000) * Tanjyuu
     SouJyuuryou = 0
     if (KakouSuu != 0): SouJyuuryou = (Tanjyuu * KakouSuu)
     SouKakaku = 0
     if ((KakouSuu != 0) and (Tanka != 0)): SouKakaku = (Tanka * KakouSuu)
     ZaiHonJyu = 0
-    if (SouJyuuryou != 0): ZaiHonJyu = (SouJyuuryou / ((((((ZairyouKei / 10) * ZairyouKei) / 10) * ZairyouChou) * Hijyuu) * 0.7854))
+    if (SouJyuuryou != 0): ZaiHonJyu = vdiv(SouJyuuryou, vdiv(vdiv(ZairyouKei, 10) * ZairyouKei, 10) * ZairyouChou * Hijyuu * 0.7854)
     HonDay = 0
-    if ((KakouJikan != 0) and (Kosuu_Hon != 0)): HonDay = (((3600 / KakouJikan) * 24) / Kosuu_Hon)
+    if ((KakouJikan != 0) and (Kosuu_Hon != 0)): HonDay = vdiv(vdiv(3600, KakouJikan) * 24, Kosuu_Hon)
     NisSsuu = 0
-    if ((ZaiHonJyu != 0) and (HonDay != 0)): NisSsuu = (ZaiHonJyu / HonDay)
+    if ((ZaiHonJyu != 0) and (HonDay != 0)): NisSsuu = vdiv(ZaiHonJyu, HonDay)
     TMP = ''
     self.set_out('')
     TMP = (('個数／本 = ' + str(Kosuu_Hon).replace(' ', '')) + '個')
@@ -252,7 +252,7 @@ def gen_Kako_Cal_6(self):
         return
     TMP = ''
     self.set_out('')
-    TMP = ('回転数（Ｓ） = ' + cv(((MMin * 1000) / (Kei * math.pi))))
+    TMP = '回転数（Ｓ） = ' + cv(vdiv(MMin * 1000, Kei * math.pi))
     self.a(TMP)
 
 
@@ -284,7 +284,7 @@ def gen_Kako_Cal_9(self):
     R1 = vbval(self.txt('TextBox2'))
     X1 = vbval(self.txt('TextBox3'))
     bL = R1
-    cL = (X1 / 2)
+    cL = vdiv(X1, 2)
     aL = vsqrt(((bL * bL) - (cL * cL)))
     TMP = ''
     self.set_out('')
@@ -304,8 +304,8 @@ def gen_Kako_Cross_1(self):
     Shift = vbval(self.txt('TextBox10'))
     Yoyu = vbval(self.txt('TextBox11'))
     if (Mill == 0): Mill = 1
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     Times = Z2
     TA = 0
@@ -321,7 +321,7 @@ def gen_Kako_Cross_1(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = (((((('G0 X' + cv(((Zai + 1) + Mill))) + ' Y') + cv((Zai + 1))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2)))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Y' + cv(Zai + 1) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2)) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -341,9 +341,9 @@ def gen_Kako_Cross_1(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -356,7 +356,7 @@ def gen_Kako_Cross_1(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -374,7 +374,7 @@ def gen_Kako_Cross_1(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2))))
+    TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2))
     self.a(TMP)
     TMP = ('G0 Y' + cv(X1))
     self.a(TMP)
@@ -388,9 +388,9 @@ def gen_Kako_Cross_1(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -403,7 +403,7 @@ def gen_Kako_Cross_1(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -439,7 +439,7 @@ def gen_Kako_Cross_10(self):
     if (Torishiro == 0): Torishiro = 1
     Ichi = (Zai + 1)
     L = X1
-    StepCount = vbint((X1 / Torishiro))
+    StepCount = vbint(vdiv(X1, Torishiro))
     Amari = (L - (StepCount * Torishiro))
     Ex = (Ichi + 1)
     TMP = ''
@@ -556,7 +556,7 @@ def gen_Kako_Cross_12(self):
     if (Torishiro == 0): Torishiro = 1
     Ichi = (Zai + 1)
     L = X1
-    StepCount = vbint((X1 / Torishiro))
+    StepCount = vbint(vdiv(X1, Torishiro))
     Amari = (L - (StepCount * Torishiro))
     Ex = (Ichi + 1)
     TMP = ''
@@ -715,7 +715,7 @@ def gen_Kako_Cross_15(self):
     if (Torishiro == 0): Torishiro = 1
     Ichi = (Zai + 1)
     L = X1
-    StepCount = vbint((X1 / Torishiro))
+    StepCount = vbint(vdiv(X1, Torishiro))
     Amari = (L - (StepCount * Torishiro))
     TMP = ''
     self.set_out('')
@@ -767,7 +767,7 @@ def gen_Kako_Cross_16(self):
     if (Torishiro == 0): Torishiro = 1
     Ichi = (Zai + 1)
     L = X1
-    StepCount = vbint((X1 / Torishiro))
+    StepCount = vbint(vdiv(X1, Torishiro))
     Amari = (L - (StepCount * Torishiro))
     TMP = ''
     self.set_out('')
@@ -825,8 +825,8 @@ def gen_Kako_Cross_2(self):
     else:
         Z2 = Mill
         Z1 = (Z1 - Mill)
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     Times = Z2
     TA = 0
@@ -842,7 +842,7 @@ def gen_Kako_Cross_2(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = (((((('G0 X' + cv(((Zai + 1) + Mill))) + ' Y') + cv((Zai + 1))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2)))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Y' + cv(Zai + 1) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2)) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -862,9 +862,9 @@ def gen_Kako_Cross_2(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -877,7 +877,7 @@ def gen_Kako_Cross_2(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -895,7 +895,7 @@ def gen_Kako_Cross_2(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2))))
+    TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2))
     self.a(TMP)
     TMP = ('G0 Y' + cv(X1))
     self.a(TMP)
@@ -909,9 +909,9 @@ def gen_Kako_Cross_2(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -924,7 +924,7 @@ def gen_Kako_Cross_2(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 Y' + cv(X1))
             self.a(TMP)
@@ -957,8 +957,8 @@ def gen_Kako_Cross_3(self):
     Z1 = vbval(self.txt('TextBox8'))
     Shift = vbval(self.txt('TextBox9'))
     if (Mill == 0): Mill = 1
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     TMP = ''
     self.set_out('')
@@ -972,7 +972,7 @@ def gen_Kako_Cross_3(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = ((((('G0 X0' + ' Y') + cv((Zai + 1))) + ' Z') + cv(((Shift - (Mill / 2)) - 1))) + ' T6')
+    TMP = 'G0 X0' + ' Y' + cv(Zai + 1) + ' Z' + cv(Shift - vdiv(Mill, 2) - 1) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -982,9 +982,9 @@ def gen_Kako_Cross_3(self):
     self.a(TMP)
     TMP = ('G0 Y' + cv(X1))
     self.a(TMP)
-    TMP = (('G1 Z' + cv(((Shift - (Mill / 2)) - 0.2))) + ' F0.2')
+    TMP = 'G1 Z' + cv(Shift - vdiv(Mill, 2) - 0.2) + ' F0.2'
     self.a(TMP)
-    TMP = (('G1 Z' + cv((((Z1 + Shift) + Tanmen) - (Mill / 2)))) + F)
+    TMP = 'G1 Z' + cv(Z1 + Shift + Tanmen - vdiv(Mill, 2)) + F
     self.a(TMP)
     TMP = 'G4 U0.2'
     self.a(TMP)
@@ -1000,13 +1000,13 @@ def gen_Kako_Cross_3(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = (('G0 X0' + ' Z') + cv(((Shift - (Mill / 2)) - 1)))
+    TMP = 'G0 X0' + ' Z' + cv(Shift - vdiv(Mill, 2) - 1)
     self.a(TMP)
     TMP = ('G0 Y' + cv(X1))
     self.a(TMP)
-    TMP = (('G1 Z' + cv(((Shift - (Mill / 2)) - 0.2))) + ' F0.2')
+    TMP = 'G1 Z' + cv(Shift - vdiv(Mill, 2) - 0.2) + ' F0.2'
     self.a(TMP)
-    TMP = (('G1 Z' + cv((((Z1 + Shift) + Tanmen) - (Mill / 2)))) + F)
+    TMP = 'G1 Z' + cv(Z1 + Shift + Tanmen - vdiv(Mill, 2)) + F
     self.a(TMP)
     TMP = 'G4 U0.2'
     self.a(TMP)
@@ -1039,8 +1039,8 @@ def gen_Kako_Cross_4(self):
     Z2 = vbval(self.txt('TextBox9'))
     Shift = vbval(self.txt('TextBox10'))
     if (Mill == 0): Mill = 1
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     TMP = ''
     self.set_out('')
@@ -1054,7 +1054,7 @@ def gen_Kako_Cross_4(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = (((((('G0 X' + cv(((Zai + 1) + Mill))) + ' Y') + cv((Zai + 1))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2)))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Y' + cv(Zai + 1) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2)) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -1071,7 +1071,7 @@ def gen_Kako_Cross_4(self):
     if (Z2 > Mill):
         TMP = ('G1 X0' + F)
         self.a(TMP)
-        TMP = (('G1 Z' + cv(((((Z1 + Z2) + Shift) + Tanmen) - (Mill / 2)))) + F)
+        TMP = 'G1 Z' + cv(Z1 + Z2 + Shift + Tanmen - vdiv(Mill, 2)) + F
         self.a(TMP)
         TMP = 'G4 U0.2'
         self.a(TMP)
@@ -1087,7 +1087,7 @@ def gen_Kako_Cross_4(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = ((('G0 X' + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2))))
+    TMP = 'G0 X' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2))
     self.a(TMP)
     TMP = ('G0 Y' + cv(X1))
     self.a(TMP)
@@ -1098,7 +1098,7 @@ def gen_Kako_Cross_4(self):
     if (Z2 > Mill):
         TMP = ('G1 X0' + F)
         self.a(TMP)
-        TMP = (('G1 Z' + cv(((((Z1 + Z2) + Shift) + Tanmen) - (Mill / 2)))) + F)
+        TMP = 'G1 Z' + cv(Z1 + Z2 + Shift + Tanmen - vdiv(Mill, 2)) + F
         self.a(TMP)
         TMP = 'G4 U0.2'
         self.a(TMP)
@@ -1132,8 +1132,8 @@ def gen_Kako_Cross_5(self):
     Shift = vbval(self.txt('TextBox10'))
     Yoyu = vbval(self.txt('TextBox11'))
     if (Mill == 0): Mill = 1
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     Times = Z2
     TA = 0
@@ -1149,7 +1149,7 @@ def gen_Kako_Cross_5(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = (((((('G0 X' + cv((Zai + 1))) + ' Y') + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2)))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1) + ' Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2)) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -1169,9 +1169,9 @@ def gen_Kako_Cross_5(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1184,7 +1184,7 @@ def gen_Kako_Cross_5(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1202,7 +1202,7 @@ def gen_Kako_Cross_5(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2))))
+    TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2))
     self.a(TMP)
     TMP = ('G0 X' + cv(X1))
     self.a(TMP)
@@ -1216,9 +1216,9 @@ def gen_Kako_Cross_5(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1231,7 +1231,7 @@ def gen_Kako_Cross_5(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1272,8 +1272,8 @@ def gen_Kako_Cross_6(self):
     else:
         Z2 = Mill
         Z1 = (Z1 - Mill)
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     Times = Z2
     TA = 0
@@ -1289,7 +1289,7 @@ def gen_Kako_Cross_6(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = (((((('G0 X' + cv((Zai + 1))) + ' Y') + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2)))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1) + ' Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2)) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -1309,9 +1309,9 @@ def gen_Kako_Cross_6(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1324,7 +1324,7 @@ def gen_Kako_Cross_6(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1342,7 +1342,7 @@ def gen_Kako_Cross_6(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2))))
+    TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2))
     self.a(TMP)
     TMP = ('G0 X' + cv(X1))
     self.a(TMP)
@@ -1356,9 +1356,9 @@ def gen_Kako_Cross_6(self):
     TA = 0
     while True:
         if (Times <= 0): break
-        if ((Times - Mill) >= 0):
+        if (((Times - Mill) >= 0) and ((Mill - Yoyu) > 0)):
             TA = ((TA + Mill) - Yoyu)
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1371,7 +1371,7 @@ def gen_Kako_Cross_6(self):
             Times = (Times - (Mill - Yoyu))
         else:
             TA += Times
-            TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv(((((Z1 + Shift) + Tanmen) + (Mill / 2)) + TA)))
+            TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2) + TA)
             self.a(TMP)
             TMP = ('G0 X' + cv(X1))
             self.a(TMP)
@@ -1404,8 +1404,8 @@ def gen_Kako_Cross_7(self):
     Z1 = vbval(self.txt('TextBox8'))
     Shift = vbval(self.txt('TextBox9'))
     if (Mill == 0): Mill = 1
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     TMP = ''
     self.set_out('')
@@ -1419,7 +1419,7 @@ def gen_Kako_Cross_7(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = ((((('G0 X' + cv((Zai + 1))) + ' Y0') + ' Z') + cv(((Shift - (Mill / 2)) - 1))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1) + ' Y0' + ' Z' + cv(Shift - vdiv(Mill, 2) - 1) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -1429,9 +1429,9 @@ def gen_Kako_Cross_7(self):
     self.a(TMP)
     TMP = ('G0 X' + cv(X1))
     self.a(TMP)
-    TMP = (('G1 Z' + cv(((Shift - (Mill / 2)) - 0.2))) + ' F0.2')
+    TMP = 'G1 Z' + cv(Shift - vdiv(Mill, 2) - 0.2) + ' F0.2'
     self.a(TMP)
-    TMP = (('G1 Z' + cv((((Z1 + Shift) + Tanmen) - (Mill / 2)))) + F)
+    TMP = 'G1 Z' + cv(Z1 + Shift + Tanmen - vdiv(Mill, 2)) + F
     self.a(TMP)
     TMP = 'G4 U0.2'
     self.a(TMP)
@@ -1447,13 +1447,13 @@ def gen_Kako_Cross_7(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = (('G0 Y0' + ' Z') + cv(((Shift - (Mill / 2)) - 1)))
+    TMP = 'G0 Y0' + ' Z' + cv(Shift - vdiv(Mill, 2) - 1)
     self.a(TMP)
     TMP = ('G0 X' + cv(X1))
     self.a(TMP)
-    TMP = (('G1 Z' + cv(((Shift - (Mill / 2)) - 0.2))) + ' F0.2')
+    TMP = 'G1 Z' + cv(Shift - vdiv(Mill, 2) - 0.2) + ' F0.2'
     self.a(TMP)
-    TMP = (('G1 Z' + cv((((Z1 + Shift) + Tanmen) - (Mill / 2)))) + F)
+    TMP = 'G1 Z' + cv(Z1 + Shift + Tanmen - vdiv(Mill, 2)) + F
     self.a(TMP)
     TMP = 'G4 U0.2'
     self.a(TMP)
@@ -1486,8 +1486,8 @@ def gen_Kako_Cross_8(self):
     Z2 = vbval(self.txt('TextBox9'))
     Shift = vbval(self.txt('TextBox10'))
     if (Mill == 0): Mill = 1
-    bL = (Zai / 2)
-    cL = (X1 / 2)
+    bL = vdiv(Zai, 2)
+    cL = vdiv(X1, 2)
     Ichi = (vsqrt(((bL * bL) - (cL * cL))) * 2)
     TMP = ''
     self.set_out('')
@@ -1501,7 +1501,7 @@ def gen_Kako_Cross_8(self):
     self.a(TMP)
     TMP = ('M36 S' + S)
     self.a(TMP)
-    TMP = (((((('G0 X' + cv((Zai + 1))) + ' Y') + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2)))) + ' T6')
+    TMP = 'G0 X' + cv(Zai + 1) + ' Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2)) + ' T6'
     self.a(TMP)
     TMP = '(M8)'
     self.a(TMP)
@@ -1518,7 +1518,7 @@ def gen_Kako_Cross_8(self):
     if (Z2 > Mill):
         TMP = ('G1 Y0' + F)
         self.a(TMP)
-        TMP = (('G1 Z' + cv(((((Z1 + Z2) + Shift) + Tanmen) - (Mill / 2)))) + F)
+        TMP = 'G1 Z' + cv(Z1 + Z2 + Shift + Tanmen - vdiv(Mill, 2)) + F
         self.a(TMP)
         TMP = 'G4 U0.2'
         self.a(TMP)
@@ -1534,7 +1534,7 @@ def gen_Kako_Cross_8(self):
     self.a(TMP)
     TMP = '(M7)'
     self.a(TMP)
-    TMP = ((('G0 Y' + cv(((Zai + 1) + Mill))) + ' Z') + cv((((Z1 + Shift) + Tanmen) + (Mill / 2))))
+    TMP = 'G0 Y' + cv(Zai + 1 + Mill) + ' Z' + cv(Z1 + Shift + Tanmen + vdiv(Mill, 2))
     self.a(TMP)
     TMP = ('G0 X' + cv(X1))
     self.a(TMP)
@@ -1545,7 +1545,7 @@ def gen_Kako_Cross_8(self):
     if (Z2 > Mill):
         TMP = ('G1 Y0' + F)
         self.a(TMP)
-        TMP = (('G1 Z' + cv(((((Z1 + Z2) + Shift) + Tanmen) - (Mill / 2)))) + F)
+        TMP = 'G1 Z' + cv(Z1 + Z2 + Shift + Tanmen - vdiv(Mill, 2)) + F
         self.a(TMP)
         TMP = 'G4 U0.2'
         self.a(TMP)
@@ -1654,7 +1654,7 @@ def gen_Kako_Drill_1(self):
     self.a(TMP)
     TMP = (('G0 Z' + cv(Ichi)) + ' T11')
     self.a(TMP)
-    TMP = (('G1 Z' + cv((((X1 / 2) + Tanmen) + Clear))) + F)
+    TMP = 'G1 Z' + cv(vdiv(X1, 2) + Tanmen + Clear) + F
     self.a(TMP)
     TMP = 'G4 U0.2'
     self.a(TMP)
@@ -1675,7 +1675,7 @@ def gen_Kako_Drill_2(self):
     Torishiro = vbval(self.txt('TextBox9'))
     if (Torishiro == 0): Torishiro = 1
     L = ((KakoCho + Clear) + Tanmen)
-    StepCount = vbint((L / Torishiro))
+    StepCount = vbint(vdiv(L, Torishiro))
     Amari = (L - (StepCount * Torishiro))
     Ex = (Ichi + Clear)
     TMP = ''
@@ -1815,7 +1815,7 @@ def gen_Kako_Drill_5(self):
     Torishiro = vbval(self.txt('TextBox8'))
     if (Torishiro == 0): Torishiro = 1
     L = ((Kakocho + Clear) + Tanmen)
-    StepCount = vbint((L / Torishiro))
+    StepCount = vbint(vdiv(L, Torishiro))
     Amari = (L - (StepCount * Torishiro))
     TMP = ''
     self.set_out('')
@@ -2913,7 +2913,7 @@ def gen_Kako_Maebiki_47(self):
     R1 = vbval(self.txt('TextBox7'))
     R2 = vbval(self.txt('TextBox8'))
     Tanmen = vbval(self.txt('TextBox9'))
-    D1 = vasin((((X1 / 2) - R2) / (R1 - R2)))
+    D1 = vasin(vdiv(vdiv(X1, 2) - R2, R1 - R2))
     H1 = (R1 * math.cos(D1))
     H2 = ((R1 - R2) * math.cos(D1))
     H3 = (R1 * math.sin(D1))
@@ -2957,7 +2957,7 @@ def gen_Kako_Maebiki_48(self):
     R2 = vbval(self.txt('TextBox8'))
     D1 = vbval(self.txt('TextBox9'))
     Tanmen = vbval(self.txt('TextBox10'))
-    D2 = vasin(((((((X1 / 2) - tann(Z1, D1)) + R2) - (rt((90 - D1), R2)).A) - R2) / (R1 - R2)))
+    D2 = vasin(vdiv(vdiv(X1, 2) - tann(Z1, D1) + R2 - rt(90 - D1, R2).A - R2, R1 - R2))
     H1 = (R1 * math.cos(D2))
     H2 = ((R1 - R2) * math.cos(D2))
     H3 = (R1 * math.sin(D2))
@@ -3001,7 +3001,7 @@ def gen_Kako_Maebiki_49(self):
     R2 = vbval(self.txt('TextBox8'))
     D1 = vbval(self.txt('TextBox9'))
     Tanmen = vbval(self.txt('TextBox10'))
-    D2 = vasin((((X1 / 2) - R2) / (R1 - R2)))
+    D2 = vasin(vdiv(vdiv(X1, 2) - R2, R1 - R2))
     H1 = (R1 * math.cos(D2))
     H2 = ((R1 - R2) * math.cos(D2))
     H3 = (R1 * math.sin(D2))
