@@ -1,0 +1,71 @@
+{
+ "name": "CNC_CHK",
+ "controls": [
+  {
+   "location": [
+    12,
+    12
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox1",
+   "size": [
+    100,
+    19
+   ],
+   "tabindex": 0,
+   "visible": false,
+   "type": "TextBox",
+   "name": "TextBox1"
+  },
+  {
+   "dock": "Fill",
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "other": {
+    "FormattingEnabled": "True"
+   },
+   "itemheight": 21,
+   "location": [
+    0,
+    0
+   ],
+   "ctrlname": "ListBox1",
+   "selectionmode": "MultiExtended",
+   "size": [
+    549,
+    571
+   ],
+   "tabindex": 1,
+   "type": "ListBox",
+   "name": "ListBox1"
+  }
+ ],
+ "types": {
+  "TextBox1": "TextBox",
+  "ListBox1": "ListBox"
+ },
+ "title": "PLANET  干渉チェック",
+ "clientsize": [
+  549,
+  571
+ ],
+ "formprops": {
+  "autoscalemode": "Inherit",
+  "clientsize": [
+   549,
+   571
+  ],
+  "icon": true,
+  "ctrlname": "CNC_CHK",
+  "showintaskbar": false,
+  "startposition": "CenterScreen",
+  "text": "PLANET  干渉チェック"
+ },
+ "zorder": [
+  "ListBox1",
+  "TextBox1"
+ ]
+}

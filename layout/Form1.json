@@ -1,0 +1,1044 @@
+{
+ "name": "Form1",
+ "controls": [
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    12,
+    106
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox1",
+   "scrollbars": [
+    "Both"
+   ],
+   "size": [
+    390,
+    515
+   ],
+   "tabindex": 5,
+   "wordwrap": false,
+   "type": "TextBox",
+   "name": "TextBox1"
+  },
+  {
+   "ctrlname": "ツールToolStripMenuItem",
+   "size": [
+    61,
+    20
+   ],
+   "text": "ツール(&T)",
+   "type": "ToolStripMenuItem",
+   "name": "ツールToolStripMenuItem"
+  },
+  {
+   "ctrlname": "プログラムの整列SToolStripMenuItem",
+   "size": [
+    173,
+    22
+   ],
+   "text": "プログラムの整列(&S)",
+   "type": "ToolStripMenuItem",
+   "name": "プログラムの整列SToolStripMenuItem"
+  },
+  {
+   "ctrlname": "ToolStripMenuItem1",
+   "size": [
+    170,
+    6
+   ],
+   "type": "ToolStripSeparator",
+   "name": "ToolStripMenuItem1"
+  },
+  {
+   "ctrlname": "自動盤シミュレータJToolStripMenuItem",
+   "size": [
+    173,
+    22
+   ],
+   "text": "自動盤シミュレータ(&J)",
+   "type": "ToolStripMenuItem",
+   "name": "自動盤シミュレータJToolStripMenuItem"
+  },
+  {
+   "other": {
+    "FileName": "\"OpenFileDialog1\""
+   },
+   "type": "OpenFileDialog",
+   "name": "OpenFileDialog1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    408,
+    106
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox2",
+   "scrollbars": [
+    "Both"
+   ],
+   "size": [
+    390,
+    515
+   ],
+   "tabindex": 13,
+   "wordwrap": false,
+   "type": "TextBox",
+   "name": "TextBox2"
+  },
+  {
+   "autosize": true,
+   "location": [
+    10,
+    622
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    0,
+    12
+   ],
+   "tabindex": 17,
+   "type": "Label",
+   "name": "Label1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    406,
+    622
+   ],
+   "ctrlname": "Label2",
+   "size": [
+    0,
+    12
+   ],
+   "tabindex": 18,
+   "type": "Label",
+   "name": "Label2"
+  },
+  {
+   "location": [
+    804,
+    12
+   ],
+   "ctrlname": "GroupBox1",
+   "size": [
+    390,
+    88
+   ],
+   "tabindex": 22,
+   "tabstop": false,
+   "text": "ツール",
+   "type": "GroupBox",
+   "name": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    6,
+    62
+   ],
+   "ctrlname": "CheckBox15",
+   "size": [
+    57,
+    16
+   ],
+   "tabindex": 14,
+   "text": "Ｒ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox15",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    322,
+    62
+   ],
+   "ctrlname": "CheckBox14",
+   "size": [
+    56,
+    16
+   ],
+   "tabindex": 13,
+   "text": "Ｚ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox14",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    258,
+    62
+   ],
+   "ctrlname": "CheckBox13",
+   "size": [
+    56,
+    16
+   ],
+   "tabindex": 12,
+   "text": "Ｙ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox13",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    195,
+    62
+   ],
+   "ctrlname": "CheckBox12",
+   "size": [
+    56,
+    16
+   ],
+   "tabindex": 11,
+   "text": "Ｘ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox12",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    195,
+    18
+   ],
+   "ctrlname": "CheckBox11",
+   "size": [
+    77,
+    16
+   ],
+   "tabindex": 10,
+   "text": "Ｇ１行強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox11",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    322,
+    40
+   ],
+   "ctrlname": "CheckBox10",
+   "size": [
+    57,
+    16
+   ],
+   "tabindex": 9,
+   "text": "Ｐ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox10",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    195,
+    40
+   ],
+   "ctrlname": "CheckBox9",
+   "size": [
+    57,
+    16
+   ],
+   "tabindex": 8,
+   "text": "Ｎ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox9",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    258,
+    40
+   ],
+   "ctrlname": "CheckBox8",
+   "size": [
+    58,
+    16
+   ],
+   "tabindex": 7,
+   "text": "Ｏ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox8",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    67,
+    62
+   ],
+   "ctrlname": "CheckBox7",
+   "size": [
+    57,
+    16
+   ],
+   "tabindex": 6,
+   "text": "Ｓ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox7",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    6,
+    40
+   ],
+   "ctrlname": "CheckBox6",
+   "size": [
+    56,
+    16
+   ],
+   "tabindex": 5,
+   "text": "Ｆ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox6",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    67,
+    40
+   ],
+   "ctrlname": "CheckBox5",
+   "size": [
+    57,
+    16
+   ],
+   "tabindex": 4,
+   "text": "Ｇ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox5",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    130,
+    40
+   ],
+   "ctrlname": "CheckBox4",
+   "size": [
+    59,
+    16
+   ],
+   "tabindex": 3,
+   "text": "Ｍ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox4",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    130,
+    62
+   ],
+   "ctrlname": "CheckBox3",
+   "size": [
+    55,
+    16
+   ],
+   "tabindex": 2,
+   "text": "Ｔ強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox3",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    113,
+    18
+   ],
+   "ctrlname": "CheckBox2",
+   "size": [
+    77,
+    16
+   ],
+   "tabindex": 1,
+   "text": "Ｇ０行強調",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox2",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "location": [
+    6,
+    18
+   ],
+   "ctrlname": "CheckBox1",
+   "size": [
+    101,
+    16
+   ],
+   "tabindex": 0,
+   "text": "待ち合わせ検索",
+   "other": {
+    "UseVisualStyleBackColor": "True"
+   },
+   "type": "CheckBox",
+   "name": "CheckBox1",
+   "parent": "GroupBox1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "location": [
+    1035,
+    576
+   ],
+   "ctrlname": "Button1",
+   "size": [
+    159,
+    45
+   ],
+   "tabindex": 34,
+   "text": "●を強制消去",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button1"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Tsukkiri",
+   "location": [
+    804,
+    482
+   ],
+   "ctrlname": "PictureBox26",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 35,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox26"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Time",
+   "location": [
+    903,
+    294
+   ],
+   "ctrlname": "PictureBox25",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 33,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox25"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Replace",
+   "location": [
+    804,
+    294
+   ],
+   "ctrlname": "PictureBox24",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 32,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox24"
+  },
+  {
+   "cursor": "Hand",
+   "image": "S_F",
+   "location": [
+    1101,
+    200
+   ],
+   "ctrlname": "PictureBox23",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 31,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox23"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Boring",
+   "location": [
+    1101,
+    388
+   ],
+   "ctrlname": "PictureBox22",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 30,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox22"
+  },
+  {
+   "cursor": "Hand",
+   "image": "S_Y",
+   "location": [
+    903,
+    200
+   ],
+   "ctrlname": "PictureBox21",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 29,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox21"
+  },
+  {
+   "cursor": "Hand",
+   "image": "S_Z",
+   "location": [
+    1002,
+    200
+   ],
+   "ctrlname": "PictureBox20",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 28,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox20"
+  },
+  {
+   "cursor": "Hand",
+   "image": "S_X",
+   "location": [
+    804,
+    200
+   ],
+   "ctrlname": "PictureBox19",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 27,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox19"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Cross",
+   "location": [
+    1002,
+    388
+   ],
+   "ctrlname": "PictureBox18",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 26,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox18"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox17.Image",
+   "location": [
+    1101,
+    106
+   ],
+   "ctrlname": "PictureBox17",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 25,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox17"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox16.Image",
+   "location": [
+    1002,
+    106
+   ],
+   "ctrlname": "PictureBox16",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 24,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox16"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox15.Image",
+   "location": [
+    903,
+    106
+   ],
+   "ctrlname": "PictureBox15",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 23,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox15"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Uwagaki",
+   "location": [
+    705,
+    12
+   ],
+   "ctrlname": "PictureBox14",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 21,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox14"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Uwagaki",
+   "location": [
+    309,
+    12
+   ],
+   "ctrlname": "PictureBox13",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 20,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox13"
+  },
+  {
+   "cursor": "Hand",
+   "image": "SubTitle2",
+   "location": [
+    804,
+    576
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    225,
+    45
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 19,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Save",
+   "location": [
+    606,
+    12
+   ],
+   "ctrlname": "PictureBox12",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 16,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox12"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Load",
+   "location": [
+    507,
+    12
+   ],
+   "ctrlname": "PictureBox11",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 15,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox11"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Shinki",
+   "location": [
+    408,
+    12
+   ],
+   "ctrlname": "PictureBox10",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 14,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox10"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Urabiki",
+   "location": [
+    903,
+    388
+   ],
+   "ctrlname": "PictureBox9",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 12,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox9"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Save",
+   "location": [
+    210,
+    12
+   ],
+   "ctrlname": "PictureBox8",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 11,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox8"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Load",
+   "location": [
+    111,
+    12
+   ],
+   "ctrlname": "PictureBox7",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 10,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox7"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Shinki",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox6",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 9,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox6"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Sim",
+   "location": [
+    804,
+    106
+   ],
+   "ctrlname": "PictureBox5",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 8,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox5"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox4.Image",
+   "location": [
+    1002,
+    294
+   ],
+   "ctrlname": "PictureBox4",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 7,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox4"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox3.Image",
+   "location": [
+    804,
+    388
+   ],
+   "ctrlname": "PictureBox3",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox3"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox2.Image",
+   "location": [
+    1101,
+    294
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    93,
+    88
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 3,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  }
+ ],
+ "types": {
+  "TextBox1": "TextBox",
+  "ツールToolStripMenuItem": "ToolStripMenuItem",
+  "プログラムの整列SToolStripMenuItem": "ToolStripMenuItem",
+  "ToolStripMenuItem1": "ToolStripSeparator",
+  "自動盤シミュレータJToolStripMenuItem": "ToolStripMenuItem",
+  "OpenFileDialog1": "OpenFileDialog",
+  "SaveFileDialog1": "SaveFileDialog",
+  "TextBox2": "TextBox",
+  "Label1": "Label",
+  "Label2": "Label",
+  "GroupBox1": "GroupBox",
+  "CheckBox15": "CheckBox",
+  "CheckBox14": "CheckBox",
+  "CheckBox13": "CheckBox",
+  "CheckBox12": "CheckBox",
+  "CheckBox11": "CheckBox",
+  "CheckBox10": "CheckBox",
+  "CheckBox9": "CheckBox",
+  "CheckBox8": "CheckBox",
+  "CheckBox7": "CheckBox",
+  "CheckBox6": "CheckBox",
+  "CheckBox5": "CheckBox",
+  "CheckBox4": "CheckBox",
+  "CheckBox3": "CheckBox",
+  "CheckBox2": "CheckBox",
+  "CheckBox1": "CheckBox",
+  "Button1": "Button",
+  "PictureBox26": "PictureBox",
+  "PictureBox25": "PictureBox",
+  "PictureBox24": "PictureBox",
+  "PictureBox23": "PictureBox",
+  "PictureBox22": "PictureBox",
+  "PictureBox21": "PictureBox",
+  "PictureBox20": "PictureBox",
+  "PictureBox19": "PictureBox",
+  "PictureBox18": "PictureBox",
+  "PictureBox17": "PictureBox",
+  "PictureBox16": "PictureBox",
+  "PictureBox15": "PictureBox",
+  "PictureBox14": "PictureBox",
+  "PictureBox13": "PictureBox",
+  "PictureBox1": "PictureBox",
+  "PictureBox12": "PictureBox",
+  "PictureBox11": "PictureBox",
+  "PictureBox10": "PictureBox",
+  "PictureBox9": "PictureBox",
+  "PictureBox8": "PictureBox",
+  "PictureBox7": "PictureBox",
+  "PictureBox6": "PictureBox",
+  "PictureBox5": "PictureBox",
+  "PictureBox4": "PictureBox",
+  "PictureBox3": "PictureBox",
+  "PictureBox2": "PictureBox"
+ },
+ "title": "PLANET",
+ "clientsize": [
+  1206,
+  650
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "backcolor": "White",
+  "clientsize": [
+   1206,
+   650
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "Form1",
+  "startposition": "CenterScreen",
+  "text": "PLANET"
+ },
+ "zorder": [
+  "PictureBox26",
+  "Button1",
+  "PictureBox25",
+  "PictureBox24",
+  "PictureBox23",
+  "PictureBox22",
+  "PictureBox21",
+  "PictureBox20",
+  "PictureBox19",
+  "PictureBox18",
+  "PictureBox17",
+  "PictureBox16",
+  "PictureBox15",
+  "GroupBox1",
+  "PictureBox14",
+  "PictureBox13",
+  "PictureBox1",
+  "Label2",
+  "Label1",
+  "PictureBox12",
+  "PictureBox11",
+  "PictureBox10",
+  "TextBox2",
+  "PictureBox9",
+  "PictureBox8",
+  "PictureBox7",
+  "PictureBox6",
+  "PictureBox5",
+  "PictureBox4",
+  "TextBox1",
+  "PictureBox3",
+  "PictureBox2"
+ ]
+}

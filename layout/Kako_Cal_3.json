@@ -1,0 +1,274 @@
+{
+ "name": "Kako_Cal_3",
+ "controls": [
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    814,
+    130
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox1",
+   "scrollbars": [
+    "Both"
+   ],
+   "size": [
+    248,
+    478
+   ],
+   "tabindex": 17,
+   "wordwrap": false,
+   "type": "TextBox",
+   "name": "TextBox1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 14.25,
+    "style": "Bold"
+   },
+   "location": [
+    328,
+    12
+   ],
+   "ctrlname": "Button1",
+   "size": [
+    480,
+    60
+   ],
+   "tabindex": 18,
+   "text": "計算",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button1"
+  },
+  {
+   "location": [
+    814,
+    12
+   ],
+   "ctrlname": "GroupBox1",
+   "size": [
+    248,
+    112
+   ],
+   "tabindex": 25,
+   "tabstop": false,
+   "text": "数値入力",
+   "type": "GroupBox",
+   "name": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    78
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    32,
+    21
+   ],
+   "tabindex": 46,
+   "text": "Ａ",
+   "type": "Label",
+   "name": "Label1",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    76
+   ],
+   "ctrlname": "TextBox4",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 45,
+   "type": "TextBox",
+   "name": "TextBox4",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    49
+   ],
+   "ctrlname": "Label13",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 44,
+   "text": "Ｒ２",
+   "type": "Label",
+   "name": "Label13",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    20
+   ],
+   "ctrlname": "Label3",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 17,
+   "text": "Ｒ１",
+   "type": "Label",
+   "name": "Label3",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    47
+   ],
+   "ctrlname": "TextBox3",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 15,
+   "type": "TextBox",
+   "name": "TextBox3",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    18
+   ],
+   "ctrlname": "TextBox2",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 14,
+   "type": "TextBox",
+   "name": "TextBox2",
+   "parent": "GroupBox1"
+  },
+  {
+   "borderstyle": "FixedSingle",
+   "cursor": "Default",
+   "image": "Hyoji_Cal_3",
+   "location": [
+    12,
+    78
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    796,
+    531
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 7,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "TextBox1": "TextBox",
+  "Button1": "Button",
+  "GroupBox1": "GroupBox",
+  "Label1": "Label",
+  "TextBox4": "TextBox",
+  "Label13": "Label",
+  "Label3": "Label",
+  "TextBox3": "TextBox",
+  "TextBox2": "TextBox",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　計算式（Ｒ－Ｒ）",
+ "clientsize": [
+  1070,
+  620
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "backcolor": "White",
+  "clientsize": [
+   1070,
+   620
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "Kako_Cal_3",
+  "startposition": "CenterScreen",
+  "text": "PLANET　計算式（Ｒ－Ｒ）"
+ },
+ "zorder": [
+  "GroupBox1",
+  "Button1",
+  "TextBox1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}

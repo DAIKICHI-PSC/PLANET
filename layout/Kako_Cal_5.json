@@ -1,0 +1,488 @@
+{
+ "name": "Kako_Cal_5",
+ "controls": [
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    814,
+    236
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox1",
+   "scrollbars": [
+    "Both"
+   ],
+   "size": [
+    248,
+    372
+   ],
+   "tabindex": 17,
+   "wordwrap": false,
+   "type": "TextBox",
+   "name": "TextBox1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 14.25,
+    "style": "Bold"
+   },
+   "location": [
+    328,
+    12
+   ],
+   "ctrlname": "Button1",
+   "size": [
+    480,
+    60
+   ],
+   "tabindex": 18,
+   "text": "計算",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button1"
+  },
+  {
+   "location": [
+    814,
+    12
+   ],
+   "ctrlname": "GroupBox1",
+   "size": [
+    248,
+    218
+   ],
+   "tabindex": 25,
+   "tabstop": false,
+   "text": "数値入力",
+   "type": "GroupBox",
+   "name": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    185
+   ],
+   "ctrlname": "Label6",
+   "size": [
+    98,
+    21
+   ],
+   "tabindex": 56,
+   "text": "加工時間",
+   "type": "Label",
+   "name": "Label6",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    110,
+    183
+   ],
+   "ctrlname": "TextBox5",
+   "size": [
+    132,
+    23
+   ],
+   "tabindex": 55,
+   "type": "TextBox",
+   "name": "TextBox5",
+   "parent": "GroupBox1"
+  },
+  {
+   "other": {
+    "DropDownStyle": "System.Windows.Forms.ComboBoxStyle.DropDownList",
+    "FormattingEnabled": "True"
+   },
+   "location": [
+    110,
+    70
+   ],
+    "ctrlname": "ComboBox3",
+    "items": [
+     "ステンレス",
+     "アルミ",
+     "真鍮",
+     "銅",
+     "鉄"
+    ],
+    "size": [
+     132,
+     20
+    ],
+    "tabindex": 54,
+   "type": "ComboBox",
+   "name": "ComboBox3",
+   "parent": "GroupBox1"
+  },
+  {
+   "other": {
+    "FormattingEnabled": "True"
+   },
+   "location": [
+    110,
+    44
+   ],
+    "ctrlname": "ComboBox2",
+    "items": [
+     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+     "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+     "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+     "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+     "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"
+    ],
+    "size": [
+     132,
+     20
+    ],
+    "tabindex": 53,
+   "type": "ComboBox",
+   "name": "ComboBox2",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    69
+   ],
+   "ctrlname": "Label5",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 52,
+   "text": "材種",
+   "type": "Label",
+   "name": "Label5",
+   "parent": "GroupBox1"
+  },
+  {
+   "other": {
+    "FormattingEnabled": "True"
+   },
+   "location": [
+    110,
+    18
+   ],
+    "ctrlname": "ComboBox1",
+    "items": [
+     "4000",
+     "3500",
+     "3000",
+     "2500",
+     "2000",
+     "1500",
+     "1000"
+    ],
+    "size": [
+     132,
+     20
+    ],
+    "tabindex": 51,
+   "type": "ComboBox",
+   "name": "ComboBox1",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    156
+   ],
+   "ctrlname": "Label4",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 50,
+   "text": "加工数",
+   "type": "Label",
+   "name": "Label4",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    98
+   ],
+   "ctrlname": "Label2",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 48,
+   "text": "加工長",
+   "type": "Label",
+   "name": "Label2",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    43
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 46,
+   "text": "材料径",
+   "type": "Label",
+   "name": "Label1",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    110,
+    154
+   ],
+   "ctrlname": "TextBox4",
+   "size": [
+    132,
+    23
+   ],
+   "tabindex": 45,
+   "type": "TextBox",
+   "name": "TextBox4",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    127
+   ],
+   "ctrlname": "Label13",
+   "size": [
+    98,
+    21
+   ],
+   "tabindex": 44,
+   "text": "材料単価",
+   "type": "Label",
+   "name": "Label13",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    17
+   ],
+   "ctrlname": "Label3",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 17,
+   "text": "材料長",
+   "type": "Label",
+   "name": "Label3",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    110,
+    125
+   ],
+   "ctrlname": "TextBox3",
+   "size": [
+    132,
+    23
+   ],
+   "tabindex": 15,
+   "type": "TextBox",
+   "name": "TextBox3",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    110,
+    96
+   ],
+   "ctrlname": "TextBox2",
+   "size": [
+    132,
+    23
+   ],
+   "tabindex": 14,
+   "type": "TextBox",
+   "name": "TextBox2",
+   "parent": "GroupBox1"
+  },
+  {
+   "borderstyle": "FixedSingle",
+   "cursor": "Default",
+   "image": "Hyoji_Cal_5",
+   "location": [
+    12,
+    78
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    796,
+    531
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 7,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  },
+  {
+   "autoscaledimensions": [
+    6.0,
+    12.0
+   ],
+   "autoscalemode": "Font",
+   "backcolor": "White",
+   "clientsize": [
+    1070,
+    620
+   ],
+   "formborderstyle": "FixedSingle",
+   "icon": true,
+   "maximizebox": false,
+   "ctrlname": "Kako_Cal_51",
+   "startposition": "CenterScreen",
+   "text": "PLANET　計算式（材料計算）",
+   "type": "?",
+   "name": "Kako_Cal_51"
+  }
+ ],
+ "types": {
+  "TextBox1": "TextBox",
+  "Button1": "Button",
+  "GroupBox1": "GroupBox",
+  "Label6": "Label",
+  "TextBox5": "TextBox",
+  "ComboBox3": "ComboBox",
+  "ComboBox2": "ComboBox",
+  "Label5": "Label",
+  "ComboBox1": "ComboBox",
+  "Label4": "Label",
+  "Label2": "Label",
+  "Label1": "Label",
+  "TextBox4": "TextBox",
+  "Label13": "Label",
+  "Label3": "Label",
+  "TextBox3": "TextBox",
+  "TextBox2": "TextBox",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　計算式（材料計算）",
+ "clientsize": [
+  1070,
+  620
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "backcolor": "White",
+  "clientsize": [
+   1070,
+   620
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "Kako_Cal_51",
+  "startposition": "CenterScreen",
+  "text": "PLANET　計算式（材料計算）"
+ },
+ "zorder": [
+  "GroupBox1",
+  "Button1",
+  "TextBox1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}
