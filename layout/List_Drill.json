@@ -1,0 +1,172 @@
+{
+ "name": "List_Drill",
+ "controls": [
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    75
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    180,
+    33
+   ],
+   "tabindex": 49,
+   "text": "ボーリング",
+   "type": "Label",
+   "name": "Label1"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Drill_3",
+   "location": [
+    12,
+    651
+   ],
+   "ctrlname": "PictureBox6",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 53,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox6"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Drill_3",
+   "location": [
+    415,
+    381
+   ],
+   "ctrlname": "PictureBox5",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 52,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox5"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Drill_1",
+   "location": [
+    12,
+    381
+   ],
+   "ctrlname": "PictureBox4",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 51,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox4"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Drill_1",
+   "location": [
+    415,
+    111
+   ],
+   "ctrlname": "PictureBox3",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 50,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox3"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Drill_2",
+   "location": [
+    12,
+    111
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 3,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "Label1": "Label",
+  "PictureBox6": "PictureBox",
+  "PictureBox5": "PictureBox",
+  "PictureBox4": "PictureBox",
+  "PictureBox3": "PictureBox",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　穴加工",
+ "clientsize": [
+  844,
+  648
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "autoscroll": true,
+  "backcolor": "White",
+  "clientsize": [
+   844,
+   648
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "List_Drill",
+  "startposition": "CenterScreen",
+  "text": "PLANET　穴加工"
+ },
+ "zorder": [
+  "PictureBox6",
+  "PictureBox5",
+  "PictureBox4",
+  "PictureBox3",
+  "Label1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}

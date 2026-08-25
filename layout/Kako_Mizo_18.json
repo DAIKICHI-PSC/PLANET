@@ -1,0 +1,856 @@
+{
+ "name": "Kako_Mizo_18",
+ "controls": [
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    814,
+    476
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox1",
+   "scrollbars": [
+    "Both"
+   ],
+   "size": [
+    248,
+    132
+   ],
+   "tabindex": 17,
+   "wordwrap": false,
+   "type": "TextBox",
+   "name": "TextBox1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 21.75,
+    "style": "Bold"
+   },
+   "location": [
+    560,
+    12
+   ],
+   "ctrlname": "Button1",
+   "size": [
+    248,
+    60
+   ],
+   "tabindex": 18,
+   "text": "プログラム作成",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 21.75,
+    "style": "Bold"
+   },
+   "location": [
+    318,
+    12
+   ],
+   "ctrlname": "Button3",
+   "size": [
+    85,
+    60
+   ],
+   "tabindex": 24,
+   "text": "追加",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button3"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 21.75,
+    "style": "Bold"
+   },
+   "location": [
+    409,
+    12
+   ],
+   "ctrlname": "Button2",
+   "size": [
+    145,
+    60
+   ],
+   "tabindex": 23,
+   "text": "動作確認",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button2"
+  },
+  {
+   "location": [
+    814,
+    12
+   ],
+   "ctrlname": "GroupBox1",
+   "size": [
+    248,
+    458
+   ],
+   "tabindex": 25,
+   "tabstop": false,
+   "text": "数値入力",
+   "type": "GroupBox",
+   "name": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    310
+   ],
+   "ctrlname": "Label15",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 48,
+   "text": "Ｄ２°",
+   "type": "Label",
+   "name": "Label15",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    281
+   ],
+   "ctrlname": "Label14",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 47,
+   "text": "Ｄ１°",
+   "type": "Label",
+   "name": "Label14",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    424
+   ],
+   "ctrlname": "TextBox16",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 46,
+   "type": "TextBox",
+   "name": "TextBox16",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    395
+   ],
+   "ctrlname": "TextBox15",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 45,
+   "type": "TextBox",
+   "name": "TextBox15",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    107
+   ],
+   "ctrlname": "Label13",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 44,
+   "text": "Ｘ２",
+   "type": "Label",
+   "name": "Label13",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    366
+   ],
+   "ctrlname": "TextBox14",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 43,
+   "type": "TextBox",
+   "name": "TextBox14",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    252
+   ],
+   "ctrlname": "Label12",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 42,
+   "text": "Ｒ４",
+   "type": "Label",
+   "name": "Label12",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    223
+   ],
+   "ctrlname": "Label11",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 41,
+   "text": "Ｒ３",
+   "type": "Label",
+   "name": "Label11",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    337
+   ],
+   "ctrlname": "TextBox13",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 40,
+   "type": "TextBox",
+   "name": "TextBox13",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    308
+   ],
+   "ctrlname": "TextBox12",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 39,
+   "type": "TextBox",
+   "name": "TextBox12",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    368
+   ],
+   "ctrlname": "Label10",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 38,
+   "text": "溝幅",
+   "type": "Label",
+   "name": "Label10",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    279
+   ],
+   "ctrlname": "TextBox11",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 37,
+   "type": "TextBox",
+   "name": "TextBox11",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    426
+   ],
+   "ctrlname": "Label8",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 36,
+   "text": "端面挽",
+   "type": "Label",
+   "name": "Label8",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    250
+   ],
+   "ctrlname": "TextBox10",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 35,
+   "type": "TextBox",
+   "name": "TextBox10",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    194
+   ],
+   "ctrlname": "Label6",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 34,
+   "text": "Ｒ２",
+   "type": "Label",
+   "name": "Label6",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    221
+   ],
+   "ctrlname": "TextBox9",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 33,
+   "type": "TextBox",
+   "name": "TextBox9",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    397
+   ],
+   "ctrlname": "Label5",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 32,
+   "text": "工具幅",
+   "type": "Label",
+   "name": "Label5",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    339
+   ],
+   "ctrlname": "Label9",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 30,
+   "text": "溝径",
+   "type": "Label",
+   "name": "Label9",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    165
+   ],
+   "ctrlname": "Label7",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 26,
+   "text": "Ｒ１",
+   "type": "Label",
+   "name": "Label7",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    192
+   ],
+   "ctrlname": "TextBox8",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 25,
+   "type": "TextBox",
+   "name": "TextBox8",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    163
+   ],
+   "ctrlname": "TextBox7",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 23,
+   "type": "TextBox",
+   "name": "TextBox7",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    134
+   ],
+   "ctrlname": "TextBox6",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 22,
+   "type": "TextBox",
+   "name": "TextBox6",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    136
+   ],
+   "ctrlname": "Label4",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 20,
+   "text": "Ｚ１",
+   "type": "Label",
+   "name": "Label4",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    105
+   ],
+   "ctrlname": "TextBox5",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 19,
+   "type": "TextBox",
+   "name": "TextBox5",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    76
+   ],
+   "ctrlname": "TextBox4",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 18,
+   "type": "TextBox",
+   "name": "TextBox4",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    78
+   ],
+   "ctrlname": "Label3",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 17,
+   "text": "Ｘ１",
+   "type": "Label",
+   "name": "Label3",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    49
+   ],
+   "ctrlname": "Label2",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 16,
+   "text": "送り",
+   "type": "Label",
+   "name": "Label2",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    47
+   ],
+   "ctrlname": "TextBox3",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 15,
+   "text": "0.01",
+   "type": "TextBox",
+   "name": "TextBox3",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    18
+   ],
+   "ctrlname": "TextBox2",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 14,
+   "text": "2000",
+   "type": "TextBox",
+   "name": "TextBox2",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    20
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 10,
+   "text": "回転数",
+   "type": "Label",
+   "name": "Label1",
+   "parent": "GroupBox1"
+  },
+  {
+   "borderstyle": "FixedSingle",
+   "cursor": "Default",
+   "image": "Hyoji_Mizo_18",
+   "location": [
+    12,
+    78
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    796,
+    531
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 7,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "TextBox1": "TextBox",
+  "Button1": "Button",
+  "Button3": "Button",
+  "Button2": "Button",
+  "GroupBox1": "GroupBox",
+  "Label15": "Label",
+  "Label14": "Label",
+  "TextBox16": "TextBox",
+  "TextBox15": "TextBox",
+  "Label13": "Label",
+  "TextBox14": "TextBox",
+  "Label12": "Label",
+  "Label11": "Label",
+  "TextBox13": "TextBox",
+  "TextBox12": "TextBox",
+  "Label10": "Label",
+  "TextBox11": "TextBox",
+  "Label8": "Label",
+  "TextBox10": "TextBox",
+  "Label6": "Label",
+  "TextBox9": "TextBox",
+  "Label5": "Label",
+  "Label9": "Label",
+  "Label7": "Label",
+  "TextBox8": "TextBox",
+  "TextBox7": "TextBox",
+  "TextBox6": "TextBox",
+  "Label4": "Label",
+  "TextBox5": "TextBox",
+  "TextBox4": "TextBox",
+  "Label3": "Label",
+  "Label2": "Label",
+  "TextBox3": "TextBox",
+  "TextBox2": "TextBox",
+  "Label1": "Label",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　溝（Ｒ加工→テーパ→Ｒ加工→横挽き→Ｒ加工→テーパ→Ｒ加工）",
+ "clientsize": [
+  1070,
+  620
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "backcolor": "White",
+  "clientsize": [
+   1070,
+   620
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "Kako_Mizo_18",
+  "startposition": "CenterScreen",
+  "text": "PLANET　溝（Ｒ加工→テーパ→Ｒ加工→横挽き→Ｒ加工→テーパ→Ｒ加工）"
+ },
+ "zorder": [
+  "GroupBox1",
+  "Button3",
+  "Button2",
+  "Button1",
+  "TextBox1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}

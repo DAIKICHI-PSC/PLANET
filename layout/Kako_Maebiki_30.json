@@ -1,0 +1,415 @@
+{
+ "name": "Kako_Maebiki_30",
+ "controls": [
+  {
+   "location": [
+    814,
+    12
+   ],
+   "ctrlname": "GroupBox1",
+   "size": [
+    248,
+    171
+   ],
+   "tabindex": 16,
+   "tabstop": false,
+   "text": "数値入力",
+   "type": "GroupBox",
+   "name": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    136
+   ],
+   "ctrlname": "Label4",
+   "size": [
+    76,
+    21
+   ],
+   "tabindex": 28,
+   "text": "端面挽",
+   "type": "Label",
+   "name": "Label4",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    134
+   ],
+   "ctrlname": "TextBox6",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 27,
+   "type": "TextBox",
+   "name": "TextBox6",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    107
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 26,
+   "text": "Ｃ１",
+   "type": "Label",
+   "name": "Label1",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    105
+   ],
+   "ctrlname": "TextBox5",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 25,
+   "type": "TextBox",
+   "name": "TextBox5",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    78
+   ],
+   "ctrlname": "Label6",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 24,
+   "text": "Ｚ１",
+   "type": "Label",
+   "name": "Label6",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    76
+   ],
+   "ctrlname": "TextBox4",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 18,
+   "type": "TextBox",
+   "name": "TextBox4",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    49
+   ],
+   "ctrlname": "Label3",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 17,
+   "text": "Ｘ１",
+   "type": "Label",
+   "name": "Label3",
+   "parent": "GroupBox1"
+  },
+  {
+   "autosize": true,
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 15.75,
+    "style": "Regular"
+   },
+   "location": [
+    6,
+    20
+   ],
+   "ctrlname": "Label2",
+   "size": [
+    54,
+    21
+   ],
+   "tabindex": 16,
+   "text": "送り",
+   "type": "Label",
+   "name": "Label2",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    47
+   ],
+   "ctrlname": "TextBox3",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 15,
+   "type": "TextBox",
+   "name": "TextBox3",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    88,
+    18
+   ],
+   "ctrlname": "TextBox2",
+   "size": [
+    154,
+    23
+   ],
+   "tabindex": 14,
+   "text": "0.01",
+   "type": "TextBox",
+   "name": "TextBox2",
+   "parent": "GroupBox1"
+  },
+  {
+   "font": {
+    "name": "ＭＳ ゴシック",
+    "size": 12.0,
+    "style": "Regular"
+   },
+   "location": [
+    814,
+    255
+   ],
+   "multiline": true,
+   "ctrlname": "TextBox1",
+   "scrollbars": [
+    "Both"
+   ],
+   "size": [
+    248,
+    353
+   ],
+   "tabindex": 17,
+   "wordwrap": false,
+   "type": "TextBox",
+   "name": "TextBox1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 21.75,
+    "style": "Bold"
+   },
+   "location": [
+    560,
+    12
+   ],
+   "ctrlname": "Button1",
+   "size": [
+    248,
+    60
+   ],
+   "tabindex": 18,
+   "text": "プログラム作成",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button1"
+  },
+  {
+   "borderstyle": "FixedSingle",
+   "cursor": "Default",
+   "image": "Hyoji_Maebiki_30",
+   "location": [
+    12,
+    78
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    796,
+    531
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 7,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 21.75,
+    "style": "Bold"
+   },
+   "location": [
+    318,
+    12
+   ],
+   "ctrlname": "Button3",
+   "size": [
+    85,
+    60
+   ],
+   "tabindex": 22,
+   "text": "追加",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button3"
+  },
+  {
+   "backcolor": "System.Drawing.SystemColors.ButtonFace",
+   "font": {
+    "name": "ＭＳ 明朝",
+    "size": 21.75,
+    "style": "Bold"
+   },
+   "location": [
+    409,
+    12
+   ],
+   "ctrlname": "Button2",
+   "size": [
+    145,
+    60
+   ],
+   "tabindex": 21,
+   "text": "動作確認",
+   "other": {
+    "UseVisualStyleBackColor": "False"
+   },
+   "type": "Button",
+   "name": "Button2"
+  }
+ ],
+ "types": {
+  "GroupBox1": "GroupBox",
+  "Label4": "Label",
+  "TextBox6": "TextBox",
+  "Label1": "Label",
+  "TextBox5": "TextBox",
+  "Label6": "Label",
+  "TextBox4": "TextBox",
+  "Label3": "Label",
+  "Label2": "Label",
+  "TextBox3": "TextBox",
+  "TextBox2": "TextBox",
+  "TextBox1": "TextBox",
+  "Button1": "Button",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox",
+  "Button3": "Button",
+  "Button2": "Button"
+ },
+ "title": "PLANET　前挽き（横挽き→面取り）",
+ "clientsize": [
+  1070,
+  620
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "backcolor": "White",
+  "clientsize": [
+   1070,
+   620
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "Kako_Maebiki_30",
+  "startposition": "CenterScreen",
+  "text": "PLANET　前挽き（横挽き→面取り）"
+ },
+ "zorder": [
+  "Button3",
+  "Button2",
+  "Button1",
+  "TextBox1",
+  "GroupBox1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}

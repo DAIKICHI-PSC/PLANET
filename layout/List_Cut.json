@@ -1,0 +1,90 @@
+{
+ "name": "List_Cut",
+ "controls": [
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    75
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    114,
+    33
+   ],
+   "tabindex": 49,
+   "text": "突切り",
+   "type": "Label",
+   "name": "Label1"
+  },
+  {
+   "cursor": "Hand",
+   "location": [
+    12,
+    111
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 3,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "Label1": "Label",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　突切り",
+ "clientsize": [
+  844,
+  648
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "backcolor": "White",
+  "clientsize": [
+   844,
+   648
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "List_Cut",
+  "startposition": "CenterScreen",
+  "text": "PLANET　突切り"
+ },
+ "zorder": [
+  "Label1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}

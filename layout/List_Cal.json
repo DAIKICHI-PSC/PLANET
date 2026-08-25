@@ -1,0 +1,252 @@
+{
+ "name": "List_Cal",
+ "controls": [
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    75
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    114,
+    33
+   ],
+   "tabindex": 49,
+   "text": "計算式",
+   "type": "Label",
+   "name": "Label1"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_9",
+   "location": [
+    12,
+    1191
+   ],
+   "ctrlname": "PictureBox10",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 57,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox10"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_8",
+   "location": [
+    415,
+    921
+   ],
+   "ctrlname": "PictureBox9",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 56,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox9"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_7",
+   "location": [
+    12,
+    921
+   ],
+   "ctrlname": "PictureBox8",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 55,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox8"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_6",
+   "location": [
+    415,
+    111
+   ],
+   "ctrlname": "PictureBox7",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 54,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox7"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_5",
+   "location": [
+    12,
+    111
+   ],
+   "ctrlname": "PictureBox6",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 53,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox6"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_4",
+   "location": [
+    415,
+    651
+   ],
+   "ctrlname": "PictureBox5",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 52,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox5"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_3",
+   "location": [
+    12,
+    651
+   ],
+   "ctrlname": "PictureBox4",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 51,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox4"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_2",
+   "location": [
+    415,
+    381
+   ],
+   "ctrlname": "PictureBox3",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 50,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox3"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cal_1",
+   "location": [
+    12,
+    381
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 3,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "Label1": "Label",
+  "PictureBox10": "PictureBox",
+  "PictureBox9": "PictureBox",
+  "PictureBox8": "PictureBox",
+  "PictureBox7": "PictureBox",
+  "PictureBox6": "PictureBox",
+  "PictureBox5": "PictureBox",
+  "PictureBox4": "PictureBox",
+  "PictureBox3": "PictureBox",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　計算式",
+ "clientsize": [
+  844,
+  648
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "autoscroll": true,
+  "backcolor": "White",
+  "clientsize": [
+   844,
+   648
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "List_Cal",
+  "startposition": "CenterScreen",
+  "text": "PLANET　計算式"
+ },
+ "zorder": [
+  "PictureBox10",
+  "PictureBox9",
+  "PictureBox8",
+  "PictureBox7",
+  "PictureBox6",
+  "PictureBox5",
+  "PictureBox4",
+  "PictureBox3",
+  "Label1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}

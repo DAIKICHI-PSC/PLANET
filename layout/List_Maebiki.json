@@ -1,0 +1,1172 @@
+{
+ "name": "List_Maebiki",
+ "controls": [
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    75
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    345,
+    33
+   ],
+   "tabindex": 48,
+   "text": "加工開始から終了まで",
+   "type": "Label",
+   "name": "Label1"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    1188
+   ],
+   "ctrlname": "Label2",
+   "size": [
+    312,
+    33
+   ],
+   "tabindex": 49,
+   "text": "加工開始から横挽き",
+   "type": "Label",
+   "name": "Label2"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    3381
+   ],
+   "ctrlname": "Label3",
+   "size": [
+    246,
+    33
+   ],
+   "tabindex": 50,
+   "text": "加工後に外径へ",
+   "type": "Label",
+   "name": "Label3"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    4764
+   ],
+   "ctrlname": "Label4",
+   "size": [
+    246,
+    33
+   ],
+   "tabindex": 51,
+   "text": "加工後に横挽き",
+   "type": "Label",
+   "name": "Label4"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    5067
+   ],
+   "ctrlname": "Label5",
+   "size": [
+    246,
+    33
+   ],
+   "tabindex": 52,
+   "text": "その他　面取り",
+   "type": "Label",
+   "name": "Label5"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    5370
+   ],
+   "ctrlname": "Label6",
+   "size": [
+    246,
+    33
+   ],
+   "tabindex": 53,
+   "text": "その他　Ｒ加工",
+   "type": "Label",
+   "name": "Label6"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    5673
+   ],
+   "ctrlname": "Label7",
+   "size": [
+    312,
+    33
+   ],
+   "tabindex": 54,
+   "text": "その他　テーパ加工",
+   "type": "Label",
+   "name": "Label7"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_49",
+   "location": [
+    12,
+    921
+   ],
+   "ctrlname": "PictureBox50",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 62,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox50"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_48",
+   "location": [
+    415,
+    921
+   ],
+   "ctrlname": "PictureBox49",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 61,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox49"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_47",
+   "location": [
+    415,
+    3114
+   ],
+   "ctrlname": "PictureBox48",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 60,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox48"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox47.Image",
+   "location": [
+    415,
+    651
+   ],
+   "ctrlname": "PictureBox47",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 59,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox47"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox46.Image",
+   "location": [
+    12,
+    651
+   ],
+   "ctrlname": "PictureBox46",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 58,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox46"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_44",
+   "location": [
+    12,
+    3114
+   ],
+   "ctrlname": "PictureBox45",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 57,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox45"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_43",
+   "location": [
+    416,
+    2844
+   ],
+   "ctrlname": "PictureBox44",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 56,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox44"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_42",
+   "location": [
+    12,
+    2844
+   ],
+   "ctrlname": "PictureBox43",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 55,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox43"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_41",
+   "location": [
+    12,
+    6789
+   ],
+   "ctrlname": "PictureBox42",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 47,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox42"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_40",
+   "location": [
+    415,
+    4497
+   ],
+   "ctrlname": "PictureBox41",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 46,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox41"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_39",
+   "location": [
+    415,
+    3957
+   ],
+   "ctrlname": "PictureBox40",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 45,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox40"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_38",
+   "location": [
+    12,
+    3957
+   ],
+   "ctrlname": "PictureBox39",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 44,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox39"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_37",
+   "location": [
+    12,
+    3687
+   ],
+   "ctrlname": "PictureBox38",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 43,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox38"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_36",
+   "location": [
+    415,
+    3687
+   ],
+   "ctrlname": "PictureBox37",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 42,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox37"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_35",
+   "location": [
+    415,
+    6519
+   ],
+   "ctrlname": "PictureBox36",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 41,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox36"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_34",
+   "location": [
+    12,
+    6519
+   ],
+   "ctrlname": "PictureBox35",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 40,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox35"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_33",
+   "location": [
+    415,
+    6249
+   ],
+   "ctrlname": "PictureBox34",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 39,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox34"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_32",
+   "location": [
+    12,
+    6249
+   ],
+   "ctrlname": "PictureBox33",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 38,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox33"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox2.Image",
+   "location": [
+    415,
+    111
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 7,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_31",
+   "location": [
+    12,
+    5406
+   ],
+   "ctrlname": "PictureBox32",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 37,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox32"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_30",
+   "location": [
+    12,
+    5103
+   ],
+   "ctrlname": "PictureBox31",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 36,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox31"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_29",
+   "location": [
+    415,
+    5406
+   ],
+   "ctrlname": "PictureBox30",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 35,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox30"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_28",
+   "location": [
+    415,
+    5103
+   ],
+   "ctrlname": "PictureBox29",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 34,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox29"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_27",
+   "location": [
+    415,
+    4227
+   ],
+   "ctrlname": "PictureBox28",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 33,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox28"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_26",
+   "location": [
+    12,
+    4227
+   ],
+   "ctrlname": "PictureBox27",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 32,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox27"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_25",
+   "location": [
+    12,
+    4497
+   ],
+   "ctrlname": "PictureBox26",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 31,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox26"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_24",
+   "location": [
+    415,
+    4800
+   ],
+   "ctrlname": "PictureBox25",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 30,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox25"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_23",
+   "location": [
+    12,
+    4800
+   ],
+   "ctrlname": "PictureBox24",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 29,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox24"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_22",
+   "location": [
+    12,
+    3417
+   ],
+   "ctrlname": "PictureBox23",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 28,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox23"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_21",
+   "location": [
+    415,
+    3417
+   ],
+   "ctrlname": "PictureBox22",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 27,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox22"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_20",
+   "location": [
+    415,
+    5709
+   ],
+   "ctrlname": "PictureBox21",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 26,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox21"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_19",
+   "location": [
+    415,
+    5979
+   ],
+   "ctrlname": "PictureBox20",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 25,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox20"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_18",
+   "location": [
+    12,
+    5979
+   ],
+   "ctrlname": "PictureBox19",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 24,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox19"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_17",
+   "location": [
+    12,
+    5709
+   ],
+   "ctrlname": "PictureBox18",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 23,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox18"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_16",
+   "location": [
+    415,
+    2574
+   ],
+   "ctrlname": "PictureBox17",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 22,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox17"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_15",
+   "location": [
+    12,
+    2574
+   ],
+   "ctrlname": "PictureBox16",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 21,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox16"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_14",
+   "location": [
+    415,
+    2304
+   ],
+   "ctrlname": "PictureBox15",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 20,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox15"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_13",
+   "location": [
+    12,
+    2304
+   ],
+   "ctrlname": "PictureBox14",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 19,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox14"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_12",
+   "location": [
+    415,
+    2034
+   ],
+   "ctrlname": "PictureBox13",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 18,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox13"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_11",
+   "location": [
+    12,
+    2034
+   ],
+   "ctrlname": "PictureBox12",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 17,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox12"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_10",
+   "location": [
+    415,
+    1764
+   ],
+   "ctrlname": "PictureBox11",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 16,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox11"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_9",
+   "location": [
+    12,
+    1764
+   ],
+   "ctrlname": "PictureBox10",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 15,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox10"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_8",
+   "location": [
+    415,
+    1494
+   ],
+   "ctrlname": "PictureBox9",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 14,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox9"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_7",
+   "location": [
+    12,
+    1494
+   ],
+   "ctrlname": "PictureBox8",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 13,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox8"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox7.Image",
+   "location": [
+    415,
+    1224
+   ],
+   "ctrlname": "PictureBox7",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 12,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox7"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox6.Image",
+   "location": [
+    12,
+    1224
+   ],
+   "ctrlname": "PictureBox6",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 11,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox6"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_4",
+   "location": [
+    416,
+    381
+   ],
+   "ctrlname": "PictureBox5",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 10,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox5"
+  },
+  {
+   "cursor": "Hand",
+   "image": "resx:PictureBox4.Image",
+   "location": [
+    12,
+    381
+   ],
+   "ctrlname": "PictureBox4",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 9,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox4"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Maebiki_2",
+   "location": [
+    12,
+    111
+   ],
+   "ctrlname": "PictureBox3",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 8,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox3"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 3,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "Label1": "Label",
+  "Label2": "Label",
+  "Label3": "Label",
+  "Label4": "Label",
+  "Label5": "Label",
+  "Label6": "Label",
+  "Label7": "Label",
+  "PictureBox50": "PictureBox",
+  "PictureBox49": "PictureBox",
+  "PictureBox48": "PictureBox",
+  "PictureBox47": "PictureBox",
+  "PictureBox46": "PictureBox",
+  "PictureBox45": "PictureBox",
+  "PictureBox44": "PictureBox",
+  "PictureBox43": "PictureBox",
+  "PictureBox42": "PictureBox",
+  "PictureBox41": "PictureBox",
+  "PictureBox40": "PictureBox",
+  "PictureBox39": "PictureBox",
+  "PictureBox38": "PictureBox",
+  "PictureBox37": "PictureBox",
+  "PictureBox36": "PictureBox",
+  "PictureBox35": "PictureBox",
+  "PictureBox34": "PictureBox",
+  "PictureBox33": "PictureBox",
+  "PictureBox2": "PictureBox",
+  "PictureBox32": "PictureBox",
+  "PictureBox31": "PictureBox",
+  "PictureBox30": "PictureBox",
+  "PictureBox29": "PictureBox",
+  "PictureBox28": "PictureBox",
+  "PictureBox27": "PictureBox",
+  "PictureBox26": "PictureBox",
+  "PictureBox25": "PictureBox",
+  "PictureBox24": "PictureBox",
+  "PictureBox23": "PictureBox",
+  "PictureBox22": "PictureBox",
+  "PictureBox21": "PictureBox",
+  "PictureBox20": "PictureBox",
+  "PictureBox19": "PictureBox",
+  "PictureBox18": "PictureBox",
+  "PictureBox17": "PictureBox",
+  "PictureBox16": "PictureBox",
+  "PictureBox15": "PictureBox",
+  "PictureBox14": "PictureBox",
+  "PictureBox13": "PictureBox",
+  "PictureBox12": "PictureBox",
+  "PictureBox11": "PictureBox",
+  "PictureBox10": "PictureBox",
+  "PictureBox9": "PictureBox",
+  "PictureBox8": "PictureBox",
+  "PictureBox7": "PictureBox",
+  "PictureBox6": "PictureBox",
+  "PictureBox5": "PictureBox",
+  "PictureBox4": "PictureBox",
+  "PictureBox3": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　前挽き",
+ "clientsize": [
+  844,
+  648
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "autoscroll": true,
+  "backcolor": "White",
+  "clientsize": [
+   844,
+   648
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "List_Maebiki",
+  "startposition": "CenterScreen",
+  "text": "PLANET　前挽き"
+ },
+ "zorder": [
+  "PictureBox50",
+  "PictureBox49",
+  "PictureBox48",
+  "PictureBox47",
+  "PictureBox46",
+  "PictureBox45",
+  "PictureBox44",
+  "PictureBox43",
+  "Label7",
+  "Label6",
+  "Label5",
+  "Label4",
+  "Label3",
+  "Label2",
+  "Label1",
+  "PictureBox42",
+  "PictureBox41",
+  "PictureBox40",
+  "PictureBox39",
+  "PictureBox38",
+  "PictureBox37",
+  "PictureBox36",
+  "PictureBox35",
+  "PictureBox34",
+  "PictureBox33",
+  "PictureBox2",
+  "PictureBox32",
+  "PictureBox31",
+  "PictureBox30",
+  "PictureBox29",
+  "PictureBox28",
+  "PictureBox27",
+  "PictureBox26",
+  "PictureBox25",
+  "PictureBox24",
+  "PictureBox23",
+  "PictureBox22",
+  "PictureBox21",
+  "PictureBox20",
+  "PictureBox19",
+  "PictureBox18",
+  "PictureBox17",
+  "PictureBox16",
+  "PictureBox15",
+  "PictureBox14",
+  "PictureBox13",
+  "PictureBox12",
+  "PictureBox11",
+  "PictureBox10",
+  "PictureBox9",
+  "PictureBox8",
+  "PictureBox7",
+  "PictureBox6",
+  "PictureBox5",
+  "PictureBox4",
+  "PictureBox3",
+  "PictureBox1"
+ ]
+}

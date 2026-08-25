@@ -1,0 +1,412 @@
+{
+ "name": "List_Cross",
+ "controls": [
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    12,
+    75
+   ],
+   "ctrlname": "Label1",
+   "size": [
+    147,
+    33
+   ],
+   "tabindex": 49,
+   "text": "ＹＺ平面",
+   "type": "Label",
+   "name": "Label1"
+  },
+  {
+   "autosize": true,
+   "font": null,
+   "forecolor": "System.Drawing.SystemColors.Desktop",
+   "location": [
+    6,
+    1188
+   ],
+   "ctrlname": "Label2",
+   "size": [
+    147,
+    33
+   ],
+   "tabindex": 54,
+   "text": "ＸＺ平面",
+   "type": "Label",
+   "name": "Label2"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_7",
+   "location": [
+    415,
+    2034
+   ],
+   "ctrlname": "PictureBox17",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 66,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox17"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_7",
+   "location": [
+    415,
+    921
+   ],
+   "ctrlname": "PictureBox16",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 65,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox16"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_7",
+   "location": [
+    12,
+    2034
+   ],
+   "ctrlname": "PictureBox15",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 64,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox15"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_7",
+   "location": [
+    12,
+    921
+   ],
+   "ctrlname": "PictureBox14",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 63,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox14"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_6",
+   "location": [
+    415,
+    1764
+   ],
+   "ctrlname": "PictureBox13",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 62,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox13"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_5",
+   "location": [
+    12,
+    1764
+   ],
+   "ctrlname": "PictureBox12",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 61,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox12"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_6",
+   "location": [
+    415,
+    651
+   ],
+   "ctrlname": "PictureBox11",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 60,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox11"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_5",
+   "location": [
+    12,
+    651
+   ],
+   "ctrlname": "PictureBox10",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 59,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox10"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_4",
+   "location": [
+    415,
+    1494
+   ],
+   "ctrlname": "PictureBox9",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 58,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox9"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_3",
+   "location": [
+    12,
+    1494
+   ],
+   "ctrlname": "PictureBox8",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 57,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox8"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_2",
+   "location": [
+    415,
+    1224
+   ],
+   "ctrlname": "PictureBox7",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 56,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox7"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_1",
+   "location": [
+    12,
+    1224
+   ],
+   "ctrlname": "PictureBox6",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 55,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox6"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_4",
+   "location": [
+    415,
+    381
+   ],
+   "ctrlname": "PictureBox5",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 52,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox5"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_3",
+   "location": [
+    12,
+    381
+   ],
+   "ctrlname": "PictureBox4",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 51,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox4"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_2",
+   "location": [
+    415,
+    111
+   ],
+   "ctrlname": "PictureBox3",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 50,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox3"
+  },
+  {
+   "cursor": "Hand",
+   "image": "Icon_Cross_1",
+   "location": [
+    12,
+    111
+   ],
+   "ctrlname": "PictureBox2",
+   "size": [
+    397,
+    264
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 4,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox2"
+  },
+  {
+   "image": "SubTitle",
+   "location": [
+    12,
+    12
+   ],
+   "ctrlname": "PictureBox1",
+   "size": [
+    300,
+    60
+   ],
+   "sizemode": "AutoSize",
+   "tabindex": 3,
+   "tabstop": false,
+   "type": "PictureBox",
+   "name": "PictureBox1"
+  }
+ ],
+ "types": {
+  "Label1": "Label",
+  "Label2": "Label",
+  "PictureBox17": "PictureBox",
+  "PictureBox16": "PictureBox",
+  "PictureBox15": "PictureBox",
+  "PictureBox14": "PictureBox",
+  "PictureBox13": "PictureBox",
+  "PictureBox12": "PictureBox",
+  "PictureBox11": "PictureBox",
+  "PictureBox10": "PictureBox",
+  "PictureBox9": "PictureBox",
+  "PictureBox8": "PictureBox",
+  "PictureBox7": "PictureBox",
+  "PictureBox6": "PictureBox",
+  "PictureBox5": "PictureBox",
+  "PictureBox4": "PictureBox",
+  "PictureBox3": "PictureBox",
+  "PictureBox2": "PictureBox",
+  "PictureBox1": "PictureBox"
+ },
+ "title": "PLANET　クロス",
+ "clientsize": [
+  844,
+  648
+ ],
+ "formprops": {
+  "autoscaledimensions": [
+   6.0,
+   12.0
+  ],
+  "autoscalemode": "Font",
+  "autoscroll": true,
+  "backcolor": "White",
+  "clientsize": [
+   844,
+   648
+  ],
+  "formborderstyle": "FixedSingle",
+  "icon": true,
+  "maximizebox": false,
+  "ctrlname": "List_Cross",
+  "startposition": "CenterScreen",
+  "text": "PLANET　クロス"
+ },
+ "zorder": [
+  "PictureBox17",
+  "PictureBox16",
+  "PictureBox15",
+  "PictureBox14",
+  "PictureBox13",
+  "PictureBox12",
+  "PictureBox11",
+  "PictureBox10",
+  "PictureBox9",
+  "PictureBox8",
+  "PictureBox7",
+  "PictureBox6",
+  "Label2",
+  "PictureBox5",
+  "PictureBox4",
+  "PictureBox3",
+  "Label1",
+  "PictureBox2",
+  "PictureBox1"
+ ]
+}
