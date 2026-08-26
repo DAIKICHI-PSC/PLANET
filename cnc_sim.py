@@ -70,6 +70,7 @@ class CncSim:
         self.w = QMainWindow()
         self.w.setObjectName('CNC_SIM')
         self.w.setWindowTitle('PLANET　自動盤シミュレータ')
+        self.w.setWindowIcon(QIcon(app_icon()))
         central = QWidget()
         self.w.setCentralWidget(central)
 
@@ -1127,12 +1128,12 @@ class CncSim:
                         p.drawEllipse(QPointF(x, y), ax / 2, ax / 2)
 
         # program (画面にプログラムを表示)
-        # 原版と同様: 文字位置は加工点に追従、文字サイズはズーム(NCScale)に比例して拡大縮小
+        # 文字位置は加工点に追従、文字サイズは固定12pt（ズームに無関係）
         if mi[2].isChecked():
             p.save()
             p.resetTransform()
             fnt = QFont('MS Gothic')
-            fnt.setPointSizeF(12.0 * self.NCScale)
+            fnt.setPointSizeF(12.0)
             p.setFont(fnt)
             p.setPen(QPen(QColor('green')))
 
