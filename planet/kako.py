@@ -42,12 +42,25 @@ class KakoForm:
         b1 = self.controls.get('Button1')
         b2 = self.controls.get('Button2')
         b3 = self.controls.get('Button3')
-        if b1 is not None:
-            b1.clicked.connect(self.generate)
-        if b2 is not None:
-            b2.clicked.connect(self.run_action)
-        if b3 is not None:
-            b3.clicked.connect(self.append_action)
+        if self.name == 'Kako_Cal_1':
+            calc_btns = (
+                (b1, ''),
+                (b2, '_ac'),
+                (b3, '_bc'),
+                (self.controls.get('Button4'), '_Aa'),
+                (self.controls.get('Button5'), '_Ab'),
+                (self.controls.get('Button6'), '_Ac'),
+            )
+            for b, suffix in calc_btns:
+                if b is not None:
+                    b.clicked.connect(lambda _checked=False, s=suffix: self._calc_variant(s))
+        else:
+            if b1 is not None:
+                b1.clicked.connect(self.generate)
+            if b2 is not None:
+                b2.clicked.connect(self.run_action)
+            if b3 is not None:
+                b3.clicked.connect(self.append_action)
         self._close = _KakoClose(self)
         self.w.installEventFilter(self._close)
         formreg.register(name, self)
@@ -95,6 +108,15 @@ class KakoForm:
         QMessageBox.information(self.w, title, str(text))
 
     # ---- button actions ----
+    def _calc_variant(self, suffix):
+        fn = getattr(kako_logic, 'gen_Kako_Cal_1' + suffix, None)
+        if fn is None:
+            return
+        self._txt = ''
+        fn(self)
+        if self._out is not None:
+            self._out.setPlainText(self._txt)
+
     def generate(self):
         fn = getattr(kako_logic, 'gen_' + self.name, None)
         if fn is None:

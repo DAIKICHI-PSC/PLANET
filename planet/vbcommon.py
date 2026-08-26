@@ -31,9 +31,19 @@ def vbval(s):
 
 def vbint(x):
     x = float(x)
-    if x != x:
-        return 0
+    if x != x or x in (float('inf'), float('-inf')):
+        return x
     return math.floor(x)
+
+
+def vdiv(a, b):
+    a = float(a)
+    b = float(b)
+    if b == 0:
+        if a == 0:
+            return float('nan')
+        return float('inf') if a > 0 else float('-inf')
+    return a / b
 
 
 def vasin(x):
@@ -63,6 +73,12 @@ def vbcstr(x):
     if isinstance(x, int):
         return str(x)
     x = float(x)
+    if x != x:
+        return 'NaN'
+    if x == float('inf'):
+        return '\u221e'
+    if x == float('-inf'):
+        return '-\u221e'
     if x == 0:
         return '0'
     neg = x < 0
@@ -85,6 +101,12 @@ def vbcstr(x):
 
 def vbs(x):
     x = float(x)
+    if x != x:
+        return 'NaN'
+    if x == float('inf'):
+        return '\u221e'
+    if x == float('-inf'):
+        return '-\u221e'
     if x == 0:
         return ' 0'
     neg = x < 0

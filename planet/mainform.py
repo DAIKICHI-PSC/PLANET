@@ -7,7 +7,7 @@ from PySide6.QtWidgets import (
 
 from .layout import FormBuilder
 from .splitter import splitter
-from .vbcommon import cv, cv2, vbval
+from .vbcommon import cv, vdiv, vbval, vbint, vbs
 from .images import app_icon
 from . import formreg
 
@@ -25,11 +25,16 @@ def _msg(parent, text, title='情報', critical=False):
         QMessageBox.information(parent, title, text)
 
 
-def _yn(parent, text, title='確認', default_yes=False):
+def _yn(parent, text, title='確認', default_yes=True):
     default = QMessageBox.Yes if default_yes else QMessageBox.No
     r = QMessageBox.question(parent, title, text,
                              QMessageBox.Yes | QMessageBox.No, default)
     return r == QMessageBox.Yes
+
+
+def _cv2f(num):
+    # Form1.vb の Cv2 は Int(Num) の整数截断（Kako系フォームの小数2桁版とは別物）
+    return vbs(vbint(num)).replace(' ', '')
 
 
 def read_nc_file(path):
@@ -588,15 +593,15 @@ class Form1:
                 move_length = zm
             if move_length > 0:
                 if g_mode == 0:
-                    process_second_g0 += move_length / g0f_v * (60 / g0s)
+                    process_second_g0 += vdiv(move_length, g0f_v) * vdiv(60, g0s)
                     process_length_g0 += move_length
                 elif g_mode == 1:
-                    process_second_g1 += move_length / f * (60 / s)
+                    process_second_g1 += vdiv(move_length, f) * vdiv(60, s)
                     process_length_g1 += move_length
                 if g92 == 1:
-                    process_second_g92 += abs(x - g92x) / 2 / g0f_v * (60 / g0s)
-                    process_second_g92 += g92w / g0f_v * (60 / g0s)
-                    process_second_g92 += g92w / f * (60 / s)
+                    process_second_g92 += vdiv(abs(x - g92x) / 2, g0f_v) * vdiv(60, g0s)
+                    process_second_g92 += vdiv(g92w, g0f_v) * vdiv(60, g0s)
+                    process_second_g92 += vdiv(g92w, f) * vdiv(60, s)
                     process_length_g92 += g92w * 2 + abs(x - g92x) / 2
                 if f <= kf_v:
                     process_f += f
@@ -608,25 +613,25 @@ class Form1:
             ez = z
 
         def i(x):
-            return int(x)
+            return vbint(x)
 
         process_second = i(process_second_g0) + i(process_second_g1) + i(dwell) + i(process_second_g92)
         process_length = i(process_length_g0) + i(process_length_g1) + i(process_length_g92)
 
         report = ''
-        report += '総加工時間は ' + cv2(process_second) + '秒(' + cv2(process_second / 60) + '分' + cv2(process_second - 60 * int(process_second / 60)) + '秒) です。\n\n'
-        report += '１時間で ' + cv2(3600 / process_second) + '個 加工出来ます。\n'
-        report += '１日で ' + cv2(3600 / process_second * 24) + '個 加工出来ます。\n\n'
-        report += 'Ｇ４での一時停止時間は ' + cv2(dwell) + '秒 です。\n'
-        report += 'Ｇ０の移動時間は ' + cv2(process_second_g0) + '秒 です。\n'
-        report += 'Ｇ１の加工時間は ' + cv2(process_second_g1) + '秒 です。\n'
-        report += 'Ｇ９２の加工時間は ' + cv2(process_second_g92) + '秒 です。\n\n'
-        report += '総平面移動距離は ' + cv2(process_length) + 'mm です。\n'
-        report += 'Ｇ０の平面移動距離は ' + cv2(process_length_g0) + 'mm です。\n'
-        report += 'Ｇ１の平面加工距離は ' + cv2(process_length_g1) + 'mm です。\n'
-        report += 'Ｇ９２の平面加工距離は ' + cv2(process_length_g92) + 'mm です。\n\n'
-        report += '加工する際の送りの平均は F' + cv(process_f / cf) + ' です。\n'
-        report += '回転数の平均は S' + cv2(process_s / cs) + ' です。'
+        report += '総加工時間は ' + _cv2f(process_second) + '秒(' + _cv2f(process_second / 60) + '分' + _cv2f(process_second - 60 * vbint(process_second / 60)) + '秒) です。\n\n'
+        report += '１時間で ' + _cv2f(vdiv(3600, process_second)) + '個 加工出来ます。\n'
+        report += '１日で ' + _cv2f(vdiv(3600, process_second) * 24) + '個 加工出来ます。\n\n'
+        report += 'Ｇ４での一時停止時間は ' + _cv2f(dwell) + '秒 です。\n'
+        report += 'Ｇ０の移動時間は ' + _cv2f(process_second_g0) + '秒 です。\n'
+        report += 'Ｇ１の加工時間は ' + _cv2f(process_second_g1) + '秒 です。\n'
+        report += 'Ｇ９２の加工時間は ' + _cv2f(process_second_g92) + '秒 です。\n\n'
+        report += '総平面移動距離は ' + _cv2f(process_length) + 'mm です。\n'
+        report += 'Ｇ０の平面移動距離は ' + _cv2f(process_length_g0) + 'mm です。\n'
+        report += 'Ｇ１の平面加工距離は ' + _cv2f(process_length_g1) + 'mm です。\n'
+        report += 'Ｇ９２の平面加工距離は ' + _cv2f(process_length_g92) + 'mm です。\n\n'
+        report += '加工する際の送りの平均は F' + cv(vdiv(process_f, cf)) + ' です。\n'
+        report += '回転数の平均は S' + _cv2f(vdiv(process_s, cs)) + ' です。'
         _msg(self.w, report)
 
 

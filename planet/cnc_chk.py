@@ -154,7 +154,7 @@ class _HideFilter(QObject):
 
 def _yn(parent, text, title='\u78ba\u8a8d'):
     r = QMessageBox.question(parent, title, text,
-                             QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+                              QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes)
     return r == QMessageBox.Yes
 
 
@@ -173,6 +173,11 @@ class CncChk:
 
     def set_program(self, text):
         self.program = text
+
+    def show(self):
+        self.w.show()
+        self.w.raise_()
+        self.w.activateWindow()
 
     def _center_crossed(self, axis_kanji, letter, v):
         msg = axis_kanji + '\u8ef8\u304c\u6750\u6599\u306e\u4e2d\u5fc3\u3092\u8d8a\u3048\u307e\u3057\u305f\uff08' + letter + \

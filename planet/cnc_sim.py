@@ -31,7 +31,8 @@ class _HideOnClose(QObject):
             if getattr(self._fo, '_force_close', False):
                 return False
             if self._fo.mi.get(9) is not None and not self._fo.mi[9].isEnabled():
-                return False
+                event.ignore()
+                return True
             self._fo.w.hide()
             event.ignore()
             return True
@@ -68,7 +69,8 @@ class CncSim:
     def __init__(self):
         self.w = QMainWindow()
         self.w.setObjectName('CNC_SIM')
-        self.w.setWindowTitle('PLANET-自動盤シミュレータ')
+        self.w.setWindowTitle('PLANET　自動盤シミュレータ')
+        self.w.setWindowIcon(QIcon(app_icon()))
         central = QWidget()
         self.w.setCentralWidget(central)
 
@@ -639,6 +641,7 @@ class CncSim:
                     if nc_x < ex_x:
                         f = f * -1
                     self.GainZ = 0
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         self.TMPNCX += f
@@ -649,6 +652,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                 elif xmv == 0 and zmv == 1 and g2_g3 == 0:
                     if g_zero == 0:
                         f = 0.5
@@ -661,6 +665,7 @@ class CncSim:
                     if nc_z < ex_z:
                         f = f * -1
                     self.GainZ = f
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         if rcount + 1 == spin:
@@ -670,6 +675,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                 elif xmv == 1 and zmv == 1 and g2_g3 == 0:
                     if g_zero == 0:
                         f = 0.5
@@ -688,6 +694,7 @@ class CncSim:
                         f = f * -1
                     if nc_z < ex_z:
                         self.GainZ = self.GainZ * -1
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         self.TMPNCX += f
@@ -700,6 +707,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                 elif xmv == 1 and zmv == 1 and g2_g3 > 0:
                     if g_zero == 0:
                         f = 0.5
@@ -716,6 +724,7 @@ class CncSim:
                     each = move_degree / devider
                     exzz = ex_z
                     exxx = ex_x
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         if g2_g3 == 2:
@@ -736,6 +745,7 @@ class CncSim:
                         if rcount >= devider:
                             break
                         pump()
+                    self._timer.start()
                 if xmv == 1 or zmv == 1:
                     c = self.CurTool
                     self.LT[c]['TLPoint'].append((self.TMPNCZ, self.TMPNCX / -2))
@@ -746,7 +756,7 @@ class CncSim:
                         mz = abs(ex_z - nc_z)
                         deg = mz / mx if mx > mz else mx / mz
                         deg = int((math.atan(deg) * 180 / math.pi + 0.0005) * 1000) / 1000
-                        kakudo = '（角度' + vbs(deg).replace(' ', '') + '度）'
+                        kakudo = '（角度：' + vbs(deg).replace(' ', '') + '°）'
                     self.LT[c]['T'].append(line + kakudo)
                     self.LT[c]['L'].append(i)
                     mp += 1
@@ -765,6 +775,7 @@ class CncSim:
                     if nc_x < ex_x:
                         f = f * -1
                     self.GainZ = 0
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         self.TMPNCX += f
@@ -775,6 +786,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                     if xmv == 1 or zmv == 1:
                         c = self.CurTool
                         self.LT[c]['TLPoint'].append((self.TMPNCZ, self.TMPNCX / -2))
@@ -792,6 +804,7 @@ class CncSim:
                     if g92r != 0:
                         f = mx / spin
                     self.GainZ = mz / spin
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         if g92r != 0:
@@ -806,6 +819,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                     f = 0.5
                     f *= self.Speed
                     if g92r != 0:
@@ -815,6 +829,7 @@ class CncSim:
                         spin = 1
                     f = mx / spin
                     self.GainZ = 0
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         self.TMPNCX += f
@@ -825,6 +840,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                     f = g92o
                     f *= self.Speed
                     spin = int(mz / f)
@@ -832,6 +848,7 @@ class CncSim:
                         spin = 1
                     f = mz / spin
                     self.GainZ = f * -1
+                    self._timer.stop()
                     rcount = 0
                     while True:
                         if rcount + 1 == spin:
@@ -841,6 +858,7 @@ class CncSim:
                         if rcount >= spin:
                             break
                         pump()
+                    self._timer.start()
                     nc_x = g92s
             if self.ExitFlag == 1:
                 break
@@ -1110,7 +1128,7 @@ class CncSim:
                         p.drawEllipse(QPointF(x, y), ax / 2, ax / 2)
 
         # program (画面にプログラムを表示)
-        # 原版と同様: 文字位置は加工点に追従、フォントはズームで拡大縮小せず画面で一定
+        # 文字位置は加工点に追従、文字サイズは固定12pt（ズームに無関係）
         if mi[2].isChecked():
             p.save()
             p.resetTransform()
